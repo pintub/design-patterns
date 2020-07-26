@@ -1,0 +1,19 @@
+##### Abstract Factory Pattern
+- **Naming** `A Factory of objects, It is an extension of Factory method Pattern to create family of related objects`
+- **When To Use**
+    - When a client want to create a family of related objects(Example Platform Specific object family , For Mac platform UI , need {MacSpecificButton,MacSpecificDialog etc} and for Windows UI , need {WindowsSpecificButton,WindowsSpecificDialog etc}, because MacSpecificButton can't fit in WindowsSpecificDialog)
+    - Note the phrase `family of related objects`  
+- **Brute Force Programming**
+    - Having if else clause in Client class(if parameter=mac, create MacSpecificButton and MacSpecificDialog)
+- **UML**
+    - [Factory building family of same type objects](FamilyOfSameTypeProductUML)
+    - [Factory building family of Different type objects](FamilyOfDifferentProductUML)
+- **Example**
+    - `TODO`
+- **Pros** `Same as Factory method Pattern if you have already seen`
+    - Decouples and encapsulates the creation logic to separate class
+    - if such creation logic needed for multiple clients, good to have factory object for code reuse.
+    - Open/Closed Principle. You can introduce new types of products into the program without breaking existing client code
+    - You avoid tight coupling between the creator and the concrete products.
+- **Cons**
+    - ???

@@ -1,0 +1,10 @@
+Note: This UML syntax is as per https://yuml.me/, Now you can code as per YUML DSL and generate UML on the fly
+
+[Client{bg:violet}]-uses>[IProductFamilyFactory]
+[IProductFamilyFactory|+createProductA:IProduct;+createProductB::IProduct]<>-creates*>[IProduct]
+[IProductFamilyFactory]^[RandomProductFamilyFactory;IProduct|+createProductA:IProduct;+createProductB::IProduct]
+[IProductFamilyFactory]^[RoundRobbinProductFamilyFactory;IProduct|+createProductA:IProduct;+createProductB::IProduct]
+[IProductFamilyFactory]^[ByProductTypeProductFamilyFactory;IProduct|+createProductA:IProduct;+createProductB::IProduct]
+[IProduct]^[ProductA]
+[IProduct]^[ProductB]
+[IProduct]^[ProductC]

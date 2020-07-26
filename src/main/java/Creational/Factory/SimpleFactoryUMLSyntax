@@ -1,0 +1,7 @@
+Note: This UML syntax is as per https://yuml.me/, Now you can code as per YUML DSL and generate UML on the fly
+
+[Client{bg:violet}]-uses>[ProductFactory]
+[ProductFactory;IProduct|+static createProduct]<>-creates*>[IProduct]
+[IProduct]^[ProductA]
+[IProduct]^[ProductB]
+[IProduct]^[ProductC]

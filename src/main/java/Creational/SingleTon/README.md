@@ -1,0 +1,13 @@
+##### SingleTon
+###### Most popular and well-known DP
+- [Effective Java Item 3](https://github.com/pintub/EffectiveJava-Summary/blob/master/EffectiveJavaSummary/CreateAndDestroyObjects.todo)
+- [Examples](https://github.com/pintub/EffectiveJava-Summary/tree/master/src/main/java/com/sf/effectivejava/item3)
+-  Things to take care:
+    - Lazy initialization
+    - Reflection(Private constructor calling)
+    - Serialization
+    - Multi-threading
+- Cons
+    - Static instance life-span lasts till application is alive or Class-loader is alive
+    - Unit of singleton method `Classic rivalry between static method and Unit . My opinion: mocking still can be done using powermock or Jmockit which ideally should be avoided . If Stubbing is possible instead of mocking, Use stubbing. A workaround for mocking is having a layer of abstraction over Singleton class and achieve mocking. And Just a note, mocking still can be done using powermock or Jmockit` 
+
