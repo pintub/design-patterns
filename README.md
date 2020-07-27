@@ -13,8 +13,8 @@
 - [SingleTon](./src/main/java/Creational/SingleTon)
 - [Factory Method](./src/main/java/Creational/Factory)
 - [Abstract Factory Pattern](./src/main/java/Creational/AbstractFactory)
-- Builder
-- Prototype
+- [Builder](./src/main/java/Creational/Builder)
+- [Prototype](./src/main/java/Creational/Prototype)
 
 ##### Structural
 ###### How objects are related, how to assemble classes into larger structures while keeping these structures flexible and efficient.
