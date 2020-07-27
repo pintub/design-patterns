@@ -1,0 +1,14 @@
+##### Builder Pattern
+- **When To Use**
+    - When a Class has 'n' number of fields . 5 are mandatory fields and 'n-5' are optional . In such cases Builder pattern can be used with mix of constructors(For required fields) and `withProperty()` methods(FOr optional Fields)
+- **Brute Force Programming**
+    - Having 2^n constructors
+- Types
+    - ~~w/o Explicit static Class~~ `Not considered as Pattern`
+    - w/ Explicit static Class
+- **Pros**
+    - Reduced number of constructors and increases reusability of `withProperty()` methods
+- **Cons**
+    - Complexity increases if Class has sub-classes `Covered in Effective Java Item2`
+- [More Info in Effective Java Item2](https://github.com/pintub/EffectiveJava-Summary/blob/master/EffectiveJavaSummary/CreateAndDestroyObjects.todo)
+- [Example](https://github.com/pintub/EffectiveJava-Summary/tree/master/src/main/java/com/sf/effectivejava/item2)
