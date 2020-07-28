@@ -1,0 +1,22 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+class Client #violet
+class IComponent <<interface>>
+note top of Client : IComponent component = new CompositeComponent()\n component.execute()
+Client -right-> IComponent
+interface IComponent{
+    + execute()
+}
+class LeafComponent implements IComponent{
+    + execute()
+}
+note top of CompositeComponent : Delegates task to list of components\n execute()=IComponent1.execute()+IComponent1.execute()+...
+class CompositeComponent implements IComponent{
+    - components: List<IComponent>
+    + addComponent()
+    + removeComponent()
+    + execute()
+}
+CompositeComponent o-up-> IComponent
+@enduml

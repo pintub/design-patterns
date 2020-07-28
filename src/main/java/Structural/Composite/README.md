@@ -1,0 +1,15 @@
+##### Composite Pattern
+- **Naming** `Tree structure, made of composite component and Leaf components of same behavior`
+- **When To Use**
+    - When composite component(having collection of components) and Leaf components form a tree-like structure and all components have same behavior.
+    - Note the phrase `same behavior` of all components
+- **Brute Force Programming**
+    - Separate Classes for composite and Leaf component and at Client use a `if else` for perform operation on these component . For example, If Leaf, leafComponent.behavior() .Else if compositeComponent, [GetCollectionComponents and childComponent1.behavior() + childComponent2.behavior() so on]
+- [**UML**](UML.puml)
+- **Example**
+    - `TODO`
+- **Pros**
+    - You can work with complex tree structures more conveniently: use polymorphism and `recursion` to your advantage.
+    - No need of If else in Client . Rightly said, if there is `If Else` , there is opportunity of polymorphism.
+- **Cons**
+    - ???
