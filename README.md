@@ -18,14 +18,13 @@
 
 ##### Structural
 ###### How objects are related, how to assemble classes into larger structures while keeping these structures flexible and efficient.
-- Facade
-- Composite
-- Decorator
-- Proxy   
-- Adapter            
-- Bridge
-- Flyweight
-- Flyweight
+- [Facade   ](./src/main/java/Structural/Facade)	
+- [Composite](./src/main/java/Structural/Composite)	
+- [Decorator](./src/main/java/Structural/Decorator)	
+- [Proxy    ](./src/main/java/Structural/Proxy)	
+- [Adapter  ](./src/main/java/Structural/Adapter)	          
+- [Bridge   ](./src/main/java/Structural/Bridge)	
+- [Flyweight](./src/main/java/Structural/Flyweight)
 
 ##### Behavioral
 ###### How objects achieve cohesion & loose coupling
@@ -40,3 +39,7 @@
 - Template Method
 - Strategy Pattern      
 - Visitor Pattern
+
+##### UML Diagrams
+- UMLs' are drawn using [Plant UML plugin](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)
+https://plantuml.com/class-diagram

@@ -6,8 +6,8 @@
 - **Brute Force Programming**
     - Having if else clause in Client class(if parameter=mac, create MacSpecificButton and MacSpecificDialog)
 - **UML**
-    - [Factory building family of same type objects](FamilyOfSameProductTypeObjectsUMLSyntax.jpg)
-    - [Factory building family of Different type objects](FamilyOfDifferentProductTypeObjectsUMLSyntax.jpg)
+    - [Factory building family of same type objects](FamilyOfSameProductTypeObjectsUML.puml)
+    - [Factory building family of Different type objects](FamilyOfDifferentProductTypeObjectsUML.puml)
 - **Example**
     - `TODO`
 - **Pros** `Same as Factory method Pattern if you have already seen`

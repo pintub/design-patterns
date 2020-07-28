@@ -1,0 +1,39 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+class Client #violet
+note top of Client : IFormView formView = new LongFormView()\n formView.setMediaResource(new AlbumMediaResource())\n formView.display()
+interface IFormView << Interface1>>
+interface IMediaResource << Interface2>>
+note top of IFormView : Many Books refer it as Abstraction,\n Not to be confused with Interface\n or abstract class
+note top of IMediaResource : Many Books refer it as Implementation,\n Not to be confused with Interface\n Implementation
+Client -right-> IFormView
+class LongFormView implements IFormView
+class ShortFormView implements IFormView
+class AlbumMediaResource implements IMediaResource
+class ArtistMediaResource implements IMediaResource
+interface IFormView{
+    + setMediaResource()
+    + display()
+}
+class LongFormView{
+    - IMediaResource
+    + setMediaResource()
+    + display()
+}
+class ShortFormView{
+    - IMediaResource
+    + setMediaResource()
+    + display()
+}
+interface IMediaResource{
+    + details()
+}
+class AlbumMediaResource{
+    + details()
+}
+class ArtistMediaResource{
+    + details()
+}
+IFormView o-right-> IMediaResource
+@enduml

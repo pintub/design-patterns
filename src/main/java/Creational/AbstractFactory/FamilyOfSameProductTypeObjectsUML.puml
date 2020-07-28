@@ -1,0 +1,34 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+interface IProductFamilyFactory
+interface IProduct
+note top of Client : IProductFamilyFactory factory = new RandomProductFamilyFactory()\n IProduct prod1 = factory.createProductA()\n IProduct prod2 = factory.createProductB()
+class Client #violet
+note top of IProductFamilyFactory : Returns only related pair of objects\n Related Class have same color below
+Client -right-> IProductFamilyFactory : uses
+interface IProductFamilyFactory{
+    + createProductA() : IProduct
+    + createProductB() : IProduct
+}
+class RandomProductFamilyFactory implements IProductFamilyFactory{
+    - IProduct
+    + createProductA() : IProduct
+    + createProductB() : IProduct
+}
+class RoundRobbinProductFamilyFactory implements IProductFamilyFactory{
+    - IProduct
+    + createProductA() : IProduct
+    + createProductB() : IProduct
+}
+class ByProductTypeProductFamilyFactory implements IProductFamilyFactory{
+    - IProduct
+    + createProductA() : IProduct
+    + createProductB() : IProduct
+}
+IProductFamilyFactory o-down-> IProduct : creates
+class ProductA #green implements IProduct
+class ProductB #red implements IProduct
+class ProductC #green implements IProduct
+class ProductD #red implements IProduct
+@enduml

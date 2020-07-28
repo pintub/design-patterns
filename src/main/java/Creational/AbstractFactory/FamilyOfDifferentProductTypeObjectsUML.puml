@@ -1,0 +1,41 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+interface IProductFamilyFactory
+interface IProduct1
+interface IProduct2
+note top of Client : IProductFamilyFactory factory = new RandomProductFamilyFactory()\n IProduct1 prod1 = factory.createProduct1()\n IProduct2 prod2 = factory.createProduct2()
+class Client #violet
+note top of IProductFamilyFactory : Returns only related pair of objects\n {<Product1A, Product2A>, <Product1B, Product2B>, <Product1C, Product2C>}\n Related Class have same color below
+Client -right-> IProductFamilyFactory : uses
+interface IProductFamilyFactory{
+    + createProduct1() : IProduct1
+    + createProduct2() : IProduct2
+}
+class RandomProductFamilyFactory implements IProductFamilyFactory{
+    - IProduct1
+    - IProduct2
+    + createProduct1() : IProduct1
+    + createProduct2() : IProduct2
+}
+class RoundRobbinProductFamilyFactory implements IProductFamilyFactory{
+    - IProduct1
+    - IProduct2
+    + createProduct1() : IProduct1
+    + createProduct2() : IProduct2
+}
+class ByProductTypeProductFamilyFactory implements IProductFamilyFactory{
+    - IProduct1
+    - IProduct2
+    + createProduct1() : IProduct1
+    + createProduct2() : IProduct2
+}
+IProductFamilyFactory o-down-> IProduct1 : creates
+IProductFamilyFactory o-down-> IProduct2 : creates
+class Product1A #green implements IProduct1
+class Product1B #red implements IProduct1
+class Product1C #blue implements IProduct1
+class Product2A #green implements IProduct2
+class Product2B #red implements IProduct2
+class Product2C #blue implements IProduct2
+@enduml

@@ -1,0 +1,26 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+class Client #violet
+class IFacade <<interface>>
+class Facade implements IFacade
+note top of Client : IFacade facade = new Facade()\n facade.simpleOperation()
+Client -right-> IFacade
+note top of IFacade : simpleOperation()\n = subSystem1ComplexOperation() -> subSystem2ComplexOperation()
+interface IFacade{
+    + simpleOperation()
+}
+class Facade{
+    - SubSystem1
+    - SubSystem2
+    - simpleOperation()
+}
+class SubSystem1{
+    - subSystem1ComplexOperation()
+}
+class SubSystem2{
+    - subSystem2ComplexOperation()
+}
+Facade *-right-> SubSystem1
+Facade *-down-> SubSystem2
+@enduml

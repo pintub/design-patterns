@@ -1,0 +1,25 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+interface IAdapter
+interface IAdapteeService
+note top of Client : IAdapter adapter = new Adapter()\n adapter.serve()
+class Client #violet
+Client -right-> IAdapter : uses
+class Adapter implements IAdapter
+class AdapteeService implements IAdapteeService
+interface IAdapter{
+    + serve()
+}
+class Adapter{
+    + IAdapteeService
+    + serve()
+}
+class IAdapteeService{
+    + serve()
+}
+class AdapteeService{
+    + serve()
+}
+Adapter o-right-> IAdapteeService : delegates
+@enduml

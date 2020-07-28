@@ -1,0 +1,17 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+class ProductFactory
+interface IProduct
+class ProductA implements IProduct
+class ProductB implements IProduct
+class ProductC implements IProduct
+note top of Client : ProductFactory factory = new ProductFactory()\n IProduct product = factory.createProduct(productType)
+class Client #violet
+Client -right-> ProductFactory : uses
+note top of ProductFactory : Note, Static method
+class ProductFactory{
+    + static createProduct(productType: String) : IProduct
+}
+ProductFactory o-right-> IProduct : creates
+@enduml

@@ -1,0 +1,32 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+note top of OriginalClass : Before Pattern applied\n After Pattern is applied, Flyweight and Contextual Class is created
+Class OriginalClass{
+    + extrinsic_state
+    + intrinsic_state
+    + Contextual(extrinsic_state, intrinsic_state)
+    + behavior()
+}
+class Client #violet
+class Contextual
+note top of Contextual : Client Passes both states to Contextual\n Contextual get Flyweight object from factory\n and persists cached Flyweight object instead of intrinsic_state
+note top of FlyweightFactory : Maintains a map of Flyweight objects,\n if required creates new, else returns from Cache
+Client -right-> Contextual
+class Contextual{
+    + extrinsic_state
+    + flyweight : Flyweight
+    + Contextual(extrinsic_state, intrinsic_state)
+    + behavior()
+}
+class Flyweight{
+    + intrinsic_state
+}
+class FlyweightFactory{
+    + map : Map<intrinsic_state, flyweight>
+    +createFlyweight()
+}
+FlyweightFactory o-down-> Flyweight
+Contextual o-right-> FlyweightFactory
+Contextual o-right-> Flyweight
+@enduml
