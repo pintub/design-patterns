@@ -1,0 +1,22 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+note top of Client : IService service = new ProxyService()\n service.serve()\n Client unaware of RealService, RealService can be injected using IOC
+class Client #violet
+interface IService
+note left of ProxyService : Serves to its capacity\n If required, delegates to RealService
+Client -right-> IService : uses
+class IService{
+    + serve()
+}
+class ProxyService{
+    - RealService
+    + serve()
+}
+class RealService{
+    + serve()
+}
+ProxyService o-right-> RealService
+class ProxyService implements IService
+class RealService implements IService
+@enduml

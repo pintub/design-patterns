@@ -1,0 +1,20 @@
+##### Proxy Pattern
+- **Naming** `Proxy is a dummy in place of a real object`
+- **When To Use**
+    - When there is an object which is resource intensive(heavy), or remote object(proxy can be used as cache here), you can use a proxy object which is like a gateway before access an actual object . Web browser proxy settings also one kind of proxy .
+    - Client accesses proxy object first .If data available, proxy returns data, else proxy accesses original object.     
+- **Brute Force Programming**
+    - Eagerly accessing the original heavy object
+- [**UML**](UML.puml)
+- [**Example**](https://www.geeksforgeeks.org/proxy-design-pattern/)
+    - Client unaware of Actual Class
+- **Pros** 
+    - You can manage the lifecycle of the service object when clients don’t care about it.
+    - `You can control the service object without clients knowing about it.`
+    - Open/Closed Principle. You can introduce new proxies without changing the service or clients.   
+- **Cons**
+    - ???
+- **Additional Note**
+    - Resemblance with Singleton due to caching
+        - Singleton ensures one object, which can be mutable (Though Enum Singletons are immutable), Flyweight objects are immutable
+        - Singleton ensures one and only object, Flyweight pattern has no such restriction

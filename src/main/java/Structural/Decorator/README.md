@@ -16,9 +16,9 @@
 - **Cons**
     - ???
 - **Additional Note**
-    - vs Adapter 
+    - Decorator vs Adapter 
         - Both looks similar , server a wrapper on a base service provider(Adapter) or behavior(Decorator) , But Decorator can recursively add more than one toppings like a stack, which is not possible in Adapter
-    - vs Composite (Because of recursion)
+    - Decorator vs Composite (Because of recursion)
         - Think of Decorator as a topping and Composite as a tree of components with same behavior . Both for different purpose.
         - Decorator recursively adding toppings (Base behavior + Topping1 + Topping2 so on...)
         Composite recursively traverse through tree and sums/aggregates the behavior of all components .

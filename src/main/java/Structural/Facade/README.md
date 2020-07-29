@@ -1,5 +1,5 @@
 ##### Facade Pattern
-- **Naming** `Facade is The face of a building, Facade/Wrapper to a complex s/w sub-system, which is abstracted from Client`
+- **Naming** `Facade is The face of a building, Facade/Wrapper to 1 or more complex s/w sub-system, which is abstracted from Client`
 - **When To Use**
     - When you want to hide complex sub-system from Client ,Create a simple contract in form of Facade and expose to Client.
     So, client doesn't have to bother about how to use sub-system classes and in which order to call the APIs'
@@ -15,3 +15,5 @@
     - ???
 - **Additional Note**
     - Facade might be confused with Abstraction due to information hiding, but there is thin difference . Facade delegates the task to sub-system(which can be another interface or class) and Abstraction Interface hides the complexity of an implementation/Concrete class .
+    - Facade vs Adapter
+        - Facade defines a new interface for existing objects, whereas Adapter tries to make the existing interface usable. Adapter usually wraps just one object, while Facade works with an entire subsystem of objects.
