@@ -5,7 +5,6 @@
     - Read the differences with other patterns `Additional Note` section
 - **Brute Force Programming**
     - Subclassing , Topping1Class -> BaseClass, Topping2Class -> BaseClass. Suppose you now want, Topping2Class behavior on top of Topping1Class , you have to create another class  Topping2OnTopping1Class . The point is inheritance is static , for each behavior you will write new classes .
-    - Interface for each topping behavior , If there are `n` toppings, for each combination of behavior you will end up writing `2^n` classes for implementing those interfaces.
     - So, Composition is preferable here over Inheritance ,which provides lot of flexibility without creating classes at run-time 
 - [**UML**](UML.puml)
 - **Example**
