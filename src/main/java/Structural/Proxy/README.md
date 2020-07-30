@@ -14,7 +14,6 @@
     - Open/Closed Principle. You can introduce new proxies without changing the service or clients.   
 - **Cons**
     - ???
-- **Additional Note**
-    - Resemblance with Singleton due to caching
-        - Singleton ensures one object, which can be mutable (Though Enum Singletons are immutable), Flyweight objects are immutable
-        - Singleton ensures one and only object, Flyweight pattern has no such restriction
+- **Comparision with Other Patterns**
+    - vs Prototype (Because of Naming :innocent:)
+        - Prototype is for cloning whereas Proxy is a dummy for Real service

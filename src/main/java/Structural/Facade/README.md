@@ -15,5 +15,6 @@
     - ???
 - **Additional Note**
     - Facade might be confused with Abstraction due to information hiding, but there is thin difference . Facade delegates the task to sub-system(which can be another interface or class) and Abstraction Interface hides the complexity of an implementation/Concrete class .
-    - Facade vs Adapter
+- **Comparision with Other Patterns**
+    - vs Adapter (Because of Wrapping)
         - Facade defines a new interface for existing objects, whereas Adapter tries to make the existing interface usable. Adapter usually wraps just one object, while Facade works with an entire subsystem of objects.

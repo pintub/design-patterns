@@ -14,7 +14,7 @@
 - **Cons**
     - ???
 - **Additional Note**
-    - This patterns uses Composition over Inheritance, advantages are:
+    - This pattern uses Composition over Inheritance, advantages are:
         - Inheritance is static , to achieve LongFormView + Album functionality, you have to create new class called LongFormAlbumView and Client will call display() of this class .
         Composition doesn't required this new class . Client can do this `new LongFormView(new Artist()).display()`. If you are wondering what is a Client, think of a Class with run(). So so, people say `Composition achieved it at run-time` without creating unnecessary classes.
         - Inheritance has to follow Liskov's Design Principle , each subclass should have all methods implemented or all methods should fit for each subclass . Composition is choosy , uses the method it needs , rather than using all methods.

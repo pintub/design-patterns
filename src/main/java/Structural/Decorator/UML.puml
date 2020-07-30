@@ -4,7 +4,7 @@
 class Client #violet
 class IPizza <<interface>>
 BasePizzaDecorator o-up-> IPizza
-note top of Client : IPizza pizza = new PizzaDecoratorTopping2(new PizzaDecoratorTopping1(new BasePizza())\n pizza.price()\nCall Stack: PizzaDecoratorTopping2.price() -> PizzaDecoratorTopping1.price() -> BasePizzaDecorator.price()\n Execution: BasePizzaDecorator.price() -> PizzaDecoratorTopping1.price() -> PizzaDecoratorTopping2.price()
+note top of Client : IPizza pizza = new PizzaDecoratorTopping2(new PizzaDecoratorTopping1(new BasePizza())\n pizza.price()\nCall Stack: PizzaDecoratorTopping2.price() -> PizzaDecoratorTopping1.price() -> BasePizzaDecorator.price()\n Execution: BasePizzaDecorator.price() -> PizzaDecoratorTopping1.price() -> PizzaDecoratorTopping2.price()\n Like a Stack: PizzaDecoratorTopping2(bottom)->PizzaDecoratorTopping1->BasePizzaDecorator(top)
 Client -right-> IPizza : uses
 interface IPizza{
     + price()

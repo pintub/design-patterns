@@ -15,10 +15,10 @@
     - Single Responsibility Principle. You can divide a monolithic class that implements many possible variants of behavior into several smaller classes.
 - **Cons**
     - ???
-- **Additional Note**
-    - Decorator vs Adapter 
+- **Comparision with Other Patterns**
+    - vs Adapter (Because of Wrapping)
         - Both looks similar , server a wrapper on a base service provider(Adapter) or behavior(Decorator) , But Decorator can recursively add more than one toppings like a stack, which is not possible in Adapter
-    - Decorator vs Composite (Because of recursion)
+    - vs Composite (Because of recursion)
         - Think of Decorator as a topping and Composite as a tree of components with same behavior . Both for different purpose.
         - Decorator recursively adding toppings (Base behavior + Topping1 + Topping2 so on...)
         Composite recursively traverse through tree and sums/aggregates the behavior of all components .

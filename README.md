@@ -28,17 +28,17 @@
 
 ##### Behavioral
 ###### How objects achieve cohesion & loose coupling
-- Chain of Responsibility Pattern
-- Observer Pattern
-- Interpreter Pattern
-- Command Pattern
-- Iterator Pattern
-- Mediator Pattern
-- Memento Pattern
-- State Pattern
-- Template Method
-- Strategy Pattern      
-- Visitor Pattern
+- [Chain of Responsibility Pattern  ](./src/main/java/Behavioral/ChainofResponsibility)
+- [Observer Pattern                 ](./src/main/java/Behavioral/Observer)
+- [Interpreter Pattern              ]
+- [Command Pattern                  ]
+- [Iterator Pattern                 ]
+- [Mediator Pattern                 ]
+- [Memento Pattern                  ]
+- [State Pattern                    ]
+- [Template Method                  ]
+- [Strategy Pattern                 ]
+- [Visitor Pattern					]
 
 ##### UML Diagrams
 - UMLs' are drawn using [Plant UML plugin](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)

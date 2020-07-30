@@ -13,7 +13,7 @@
     - No need of creating many classes
 - **Cons**
     - Static cached objects life span though-out application lifecycle
-- **Additional Note**
-    - Resemblance with Singleton due to caching
+- **Comparision with Other Patterns**
+    - vs Singleton (Due to caching)
         - Singleton ensures one object, which can be mutable (Though Enum Singletons are immutable), Flyweight objects are immutable
         - Singleton ensures one and only object, Flyweight pattern has no such restriction
