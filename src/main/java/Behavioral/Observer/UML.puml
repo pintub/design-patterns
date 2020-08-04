@@ -1,0 +1,30 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+note top of Client: IObservable concreteObservable = new ConcreteObservable()\n concreteObservable.register(new ConcreteObserver())\n concreteObservable.notify(this)
+interface IObservable
+interface IObserver
+Client o-> IObservable : uses
+interface IObservable {
+    + register(observer : IObserver)
+    + deRegister(observer : IObserver)
+    + notify() #notifies all observers by calling update()
+}
+note left of ConcreteObservable: notify() can be called from client\n or from ConcreteObservable based on state change
+class ConcreteObservable implements IObservable{
+    + register(observer : IObserver)
+    + deRegister(observer : IObserver)
+    + notify()
+
+    + getState()
+    + setState()
+}
+IObservable o-> IObserver : 1-many
+interface IObserver{
+    + update(IObservable)
+}
+class ConcreteObserver implements IObserver{
+    + update(IObservable) #Once notified calls doSomething()
+    - doSomething()
+}
+@enduml

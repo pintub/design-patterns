@@ -1,0 +1,14 @@
+##### Interpreter Pattern
+- **Naming** `To define the grammar of a particular language and interpret setences written in that language`
+- **When To Use**
+    - To define grammar , UML pretty much resembles Composite pattern
+- **UML**
+    - [UML](UML.puml)
+- [**Example**](https://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm)
+- **Pros** 
+    - ???
+- **Cons**
+    - ???    
+- **Comparision with Other Patterns**
+    - Composite Pattern (because of UML diagram)
+        - Pattern purpose is different ,one is Structural , other is Behaviorial

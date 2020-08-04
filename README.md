@@ -30,7 +30,7 @@
 ###### How objects achieve cohesion & loose coupling
 - [Chain of Responsibility Pattern  ](./src/main/java/Behavioral/ChainofResponsibility)
 - [Observer Pattern                 ](./src/main/java/Behavioral/Observer)
-- [Interpreter Pattern              ]
+- [Interpreter Pattern              ](./src/main/java/Behavioral/Interpreter)
 - [Command Pattern                  ]
 - [Iterator Pattern                 ]
 - [Mediator Pattern                 ]

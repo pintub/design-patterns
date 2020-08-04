@@ -5,10 +5,9 @@
     - Note the phrase `similar behavior` .This is the reason, we are creating interface over all links(i.e. objects) of chain     
 - **Brute Force Programming**
     - All validations in single class
-    - Create a list of handlers and invoke `handler.serve()` one by one . Difference is in COR each object/link calls next link . Let's see detailed(but thin :wink:) difference in [last section](#comparisionwithotherpatterns) 
+    - Create a list of handlers and invoke `handler.serve()` one by one . Difference is in COR each object/link calls next link . Let's see detailed(but thin :wink:) difference in last section 
 - [**UML**](UML.puml)
-- [**Example**]
-    - `TODO` 
+- [**Example**](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example)
     - [Image](https://refactoring.guru/design-patterns/chain-of-responsibility)
 - **Pros** 
     - Single Responsibility Principle. You can decouple classes that invoke operations from classes that perform operations.
