@@ -19,7 +19,7 @@ class ConcreteObservable implements IObservable{
     + getState()
     + setState()
 }
-IObservable o-> IObserver : 1-many
+IObservable "1" o-> "many" IObserver
 interface IObserver{
     + update(IObservable)
 }

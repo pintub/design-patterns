@@ -1,0 +1,23 @@
+##### Command Pattern
+- **Naming** `Encapsulating Command or Request and Decouple a CommandInvoker and CommandReceiver`
+- **When To Use**
+    - When you want to parameterize the CommandReceiver behavior by encapsulating Command
+    - When Client need to maintain a list of commands ,i.e. a MacroCommand delegating task to mini commands . Yet again Note , MacroCommand is only useful if it is re-usable, else listing should be handling at Client Side , else If there are 'n' number of commands, `2^n` number of MacroCommand possible , which will be unnecessary of not re-used.
+    - When Client needs to have execute /unExecute(undo) on CommandReceiver actions. Undo is one good idea is Database DML operations . Suppose you have doing a DB operation in this sequence (Insert to TableA->Insert to TableB->Insert to TableC) , then if Inset to TableB fails(middle stage) , it should undo TableB insertion ,then TableA insertion.   
+- **Brute Force Programming**
+    - CommandInvoker directly interacting with CommandReceiver . I guess this doesn't have flexibility of command stacking and undoing commands.
+    - Note `undo` and `queuing/listing commands` is noticeable features of this command
+- **UML**
+    - [UML](UML.puml)
+- **Example**
+    - ???
+- **Pros**
+    - Client and Server decoupled 
+    - queuing/listing commands by having a MacroCommand
+    - Undoing Command or queue of commands
+- **Cons**
+    - Not intuitive (As per my opinion :wink:) , As per intuition, I would abstract CommandReceiver and use in CommandInvoker, but yet this approach won't have undoing feature and queuing feature(this will have to be handled in Invoker side).
+- **Comparision with Other Patterns**
+    - vs Facade Pattern (because decouples Client and Server)
+        - Facade is a wrapper over a service , Command encapsulates request or Command 
+    - vs CoR(queuing or chaining)

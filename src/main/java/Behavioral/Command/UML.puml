@@ -1,0 +1,34 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+note top of Client: CommandInvoker invoker = new CommandInvoker();\n invoker.setCommand(new ConcreteCommand1())\n invoker.executeCommand()
+class Client #violet
+Client o-> CommandInvoker : calls
+class CommandInvoker{
+    + setCommand(command : ICommand)
+    + executeCommand()
+}
+CommandInvoker "1" o-> "many" ICommand : uses
+interface ICommand{
+    + execute()
+    + unExecute()
+}
+note bottom of ConcreteCommand1:execute() calls ConcreteCommandReceiver1.action()
+class ConcreteCommand1 implements ICommand{
+    + execute()
+    + unExecute()
+}
+note bottom of ConcreteCommand2:execute() calls ConcreteCommandReceiver2.action()
+class ConcreteCommand2 implements ICommand{
+    + execute()
+    + unExecute() //calls ConcreteCommandReceiver2.action()
+}
+class ConcreteCommandReceiver1{
+    + action()
+}
+ConcreteCommand1 o-down> ConcreteCommandReceiver1 : calls
+ConcreteCommand2 o-> ConcreteCommandReceiver2 : calls
+class ConcreteCommandReceiver2{
+    + action()
+}
+@enduml

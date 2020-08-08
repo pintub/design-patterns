@@ -27,18 +27,18 @@
 - [Flyweight](./src/main/java/Structural/Flyweight)
 
 ##### Behavioral
-###### How objects achieve cohesion & loose coupling
+###### How objects achieve cohesion & loose coupling , i.e. These are meant to solve specific problems .
 - [Chain of Responsibility Pattern  ](./src/main/java/Behavioral/ChainofResponsibility)
 - [Observer Pattern                 ](./src/main/java/Behavioral/Observer)
 - [Interpreter Pattern              ](./src/main/java/Behavioral/Interpreter)
-- [Command Pattern                  ]
-- [Iterator Pattern                 ]
-- [Mediator Pattern                 ]
-- [Memento Pattern                  ]
-- [State Pattern                    ]
-- [Template Method                  ]
-- [Strategy Pattern                 ]
-- [Visitor Pattern					]
+- [Command Pattern                  ](./src/main/java/Behavioral/Command)
+- [Iterator Pattern                 ](./src/main/java/Behavioral/Iterator)
+- [Mediator Pattern                 ](./src/main/java/Behavioral/Mediator)
+- [Memento Pattern                  ](./src/main/java/Behavioral/Memento)
+- [State Pattern                    ](./src/main/java/Behavioral/State)
+- [Template Method                  ](./src/main/java/Behavioral/Template)
+- [Strategy Pattern                 ](./src/main/java/Behavioral/Strategy)
+- [Visitor Pattern					](./src/main/java/Behavioral/Visitor)
 
 ##### UML Diagrams
 - UMLs' are drawn using [Plant UML plugin](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)

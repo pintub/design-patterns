@@ -1,0 +1,23 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+note top of Client: Just like com.util.Iterator
+class Client #violet
+Client o-down-> Iterator : uses
+interface IterableCollection{
+    + iterator()
+}
+interface Iterator{
+    + hasNext()
+    + next()
+}
+IterableCollection o-> Iterator : uses
+class ArrayListIterator implements Iterator{
+    + hasNext()
+    + next()
+}
+Client o-down-> IterableCollection : uses
+class ArrayList implements IterableCollection{
+    + iterator()
+}
+@enduml

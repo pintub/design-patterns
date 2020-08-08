@@ -2,6 +2,8 @@
 - **Naming** `To define the grammar of a particular language and interpret setences written in that language`
 - **When To Use**
     - To define grammar , UML pretty much resembles Composite pattern
+- **Brute Force Programming**
+    - ???
 - **UML**
     - [UML](UML.puml)
 - [**Example**](https://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm)

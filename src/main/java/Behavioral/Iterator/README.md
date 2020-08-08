@@ -1,0 +1,20 @@
+##### Iterator Pattern
+- **Naming** `Encapsulating Iteration/Traversal Algorithm away from Actual Collection`
+- **When To Use**
+    - When Iteration logic is complex and there can be multiple ways of iteration (For example, Tree has BFS, DFS and may be more complex ones)
+    - Iterator can give one element after another ,rather giving whole collection (Remember, java's `Iterator.next()`). Client also can do lazy processing of elements and can stop at a point if the goal is achieved .
+    - Client won't have to know about internal implementation of IterableCollection and write complex iteration logic . Whoever creates the complex IterableCollection should write the Iterator as well .
+    - Iterator interface can serve different collections (Remember, Stack, ArraysList, LinkedList irrespective of their implementation , So each of this class has `Iterator` implementation returned by `list.iterator()` for example)
+- **Brute Force Programming**
+    - Each Client of IterableCollection has to program the traversing logic as well .
+- **UML**
+    - [UML](UML.puml)
+- **Example**
+    - Java `Iterator`
+- **Pros**
+    - IterableCollection will focus on only Collection and operations (like push, pop etc) and traversal decoupled
+    - Ease of use for Client
+- **Cons**
+    - ???
+- **Comparision with Other Patterns**
+    - Just a thought, Should ConcreteIterator class be inner class of ConcreteIterableCollection class as both are tightly coupled . 
