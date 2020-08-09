@@ -5,10 +5,12 @@
     - Note the phrase `family of related objects`  
 - **Brute Force Programming**
     - Having if else clause in Client class(if parameter=mac, create MacSpecificButton and MacSpecificDialog)
+- **Intuitive Example**
+    - platform-independent UI(Mac specific Button + Mac Form for Mac) and (Windows specific Button + Windows Form for Windows)
 - **UML**
     - [Factory building family of same type objects](FamilyOfSameProductTypeObjectsUML.puml)
     - [Factory building family of Different type objects](FamilyOfDifferentProductTypeObjectsUML.puml)
-- **Example**
+- **Code Example**
     - `TODO`
 - **Pros** `Same as Factory method Pattern if you have already seen`
     - Decouples and encapsulates the creation logic to separate class

@@ -1,0 +1,40 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+note as Note1
+  This Example is around how UI Controller works in UI MVC pattern
+  And how we reuse Button/Select classes in multiple pages.
+  Thus instead of IMediator using IUIController naming convention.
+end note
+
+note top of Client: IUIController controller = new LoginPageController()\n controller.register(new Button(), new Select(), new CheckBox())\n button.setUIController(controller)\n button.press()
+class Client #violet
+Client o-down-> IUIController : uses
+interface IUIController{
+    + eventHandler()
+}
+class LoginPageController implements IUIController{
+    + register(Button, Select, CheckBox)
+    + eventHandler()
+}
+class RegisterPageController implements IUIController{
+    + register(Button, Select, CheckBox)
+    + eventHandler()
+}
+note top of Button: press(){\n RegisterPageController.eventHandler()\n}
+class Button{
+    + setUIController(controller: IUIController)
+    + press()
+}
+Button o-> IUIController
+class Select{
+    + setUIController(controller: IUIController)
+    + select()
+}
+Select o-> IUIController
+class CheckBox{
+    + setUIController(controller: IUIController)
+    + tick()
+}
+CheckBox o-left-> IUIController
+@enduml

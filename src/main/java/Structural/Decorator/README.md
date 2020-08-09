@@ -6,8 +6,10 @@
 - **Brute Force Programming**
     - Subclassing , Topping1Class -> BaseClass, Topping2Class -> BaseClass. Suppose you now want, Topping2Class behavior on top of Topping1Class , you have to create another class  Topping2OnTopping1Class . The point is inheritance is static , for each behavior you will write new classes .
     - So, Composition is preferable here over Inheritance ,which provides lot of flexibility without creating classes at run-time 
+- **Intuitive Example**
+    - Pizza and Toppings
 - [**UML**](UML.puml)
-- **Example**
+- **Code Example**
     - `TODO`
 - **Pros**
     - You can extend an object’s behavior without making a new subclass.

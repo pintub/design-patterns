@@ -6,7 +6,7 @@
 - **Brute Force Programming**
     - Eagerly accessing the original heavy object
 - [**UML**](UML.puml)
-- [**Example**](https://www.geeksforgeeks.org/proxy-design-pattern/)
+- [**Code Example**](https://www.geeksforgeeks.org/proxy-design-pattern/)
     - Client unaware of Actual Class
 - **Pros** 
     - You can manage the lifecycle of the service object when clients don’t care about it.

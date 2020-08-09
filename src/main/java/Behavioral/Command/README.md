@@ -7,9 +7,11 @@
 - **Brute Force Programming**
     - CommandInvoker directly interacting with CommandReceiver . I guess this doesn't have flexibility of command stacking and undoing commands.
     - Note `undo` and `queuing/listing commands` is noticeable features of this command
+- **Intuitive Example**
+    - CRUD DB commands, especially CUD(which has commit(execute) and rollback(unExecute) capabilities) 
 - **UML**
     - [UML](UML.puml)
-- **Example**
+- **Code Example**
     - ???
 - **Pros**
     - Client and Server decoupled 

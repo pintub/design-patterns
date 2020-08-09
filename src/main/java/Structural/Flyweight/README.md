@@ -5,8 +5,10 @@
     - From Client point of view all state belong to original object/Class
 - **Brute Force Programming**
     - Lot of objects owning Intrinsic fields , leads to huge memory consumption.
+- **Intuitive Example**
+    - Java String Pool
 - [**UML**](UML.puml)
-- [**Example**]
+- [**Code Example**]
     - `TODO`
 - **Pros**
     - save lots of RAM.

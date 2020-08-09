@@ -6,7 +6,7 @@
 - **Brute Force Programming**
     - Creating multiple classes for each pair of functionality of Interface1 and Interface2 as shown in above section.
 - [**UML**](UML.puml)
-- **Example**
+- **Code Example**
     - `TODO`
 - **Pros**
     - Open/Closed Principle. You can introduce new subclasses to Interface1 and Interface2 independently of each other.

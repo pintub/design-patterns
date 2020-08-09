@@ -6,8 +6,10 @@
     - There won't be any change is client side even sub-system is changed until contract is intact
 - **Brute Force Programming**
     - Tight coupling of implementation class and Client class
+- **Intuitive Example**
+    - Google search UI, User doesn't the complexity behind it 
 - [**UML**](UML.puml)
-- [**Example**]
+- [**Code Example**]
     - `TODO`
 - **Pros**
     - Loose coupling.

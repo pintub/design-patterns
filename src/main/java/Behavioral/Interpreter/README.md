@@ -4,9 +4,11 @@
     - To define grammar , UML pretty much resembles Composite pattern
 - **Brute Force Programming**
     - ???
+- **Intuitive Example**
+    - Programming Language Compilers
 - **UML**
     - [UML](UML.puml)
-- [**Example**](https://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm)
+- [**Code Example**](https://www.tutorialspoint.com/design_pattern/interpreter_pattern.htm)
 - **Pros** 
     - ???
 - **Cons**

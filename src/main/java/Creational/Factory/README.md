@@ -7,7 +7,7 @@
 - **Types**
     - ~~Simple Factory~~ `it is not denoted as a design Pattern` [UML](./SimpleFactoryUML.puml)
     - Factory method `We are discussing this one, Only difference is abstraction over Factory class to support different types of factory and Simple factory method can be static` [UML](./FactoryMethodUML.puml)
-- [**Example**](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm)
+- [**Code Example**](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm)
 - **Pros**
     - Decouples and encapsulates the creation logic to separate class
     - if such creation logic needed for multiple clients, good to have factory object for code reuse.

@@ -5,8 +5,10 @@
 - **Brute Force Programming**
     - Change the service class `UserDetailSvc`, which might not be always possible 
     - Having adapter logic in Client itself, but it will lead to tight coupling , If UserDetailSvc changes its implementation to return YAML, Client also needs to be changed
+- **Intuitive Example**
+    - Multi-Plug power Adapter
 - [**UML**](AdapterUML.puml)
-- **Example**
+- **Code Example**
     - `TODO`
 - **Pros**
     - Decouples and encapsulates the adapter logic to separate class

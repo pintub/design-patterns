@@ -7,9 +7,11 @@
     - Iterator interface can serve different collections (Remember, Stack, ArraysList, LinkedList irrespective of their implementation , So each of this class has `Iterator` implementation returned by `list.iterator()` for example)
 - **Brute Force Programming**
     - Each Client of IterableCollection has to program the traversing logic as well .
+- **Intuitive Example**
+    - com.util.iterator
 - **UML**
     - [UML](UML.puml)
-- **Example**
+- **Code Example**
     - Java `Iterator`
 - **Pros**
     - IterableCollection will focus on only Collection and operations (like push, pop etc) and traversal decoupled
