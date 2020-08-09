@@ -1,22 +1,22 @@
-##### Mediator Pattern
-- **Naming** `Interacting via a Mediator/UI-Controller`
+##### Memento Pattern
+- **Naming** `Save object State snapshot(`Movie Memento`) and undo at will`
 - **When To Use**
-    - When two classes are tightly coupled, any changes to these make them not-reusable. Create a mediator between them.
-    - Note `re-usability` is major benefit .
-    - Actual Classes/components interact with Mediator and upon notification Mediator interacts with other components. It sounds somethings like master-slave pattern to me . `Is Mediator a master component here` ? Notice this in UML .
+    - When you want to keep track of state transition of an object and perform save/restore(undo) at will
+    - Encapsulate the state Snapshot into `memento` class , It is strongly dependent on `Original` class , not outside access to getState() of memento object , Only Original class save and restore the memento
+    - Encapsulate the state Snapshot set into `MementoCareTaker` class, It maintains the container of memento objects
 - **Brute Force Programming**
-    - Classes interacting directly
+    - ???
 - **Intuitive Example**
-    - Air Traffic Controller (Flight doesn't have to know about the flights which may land during a tie in a particular airport , rather it talks to traffic controller) . 
-    - UI javascript Controller(Button doesn't have to know what will happen if it is pressed, It just notifies it's pressed, Controller invokes other logic like pop-up alert or make another element visible) .
-    - Master-slave usage. Can Mediator be Master ?
+    - Undo/Redo Editor State (Notice the difference between [Command pattern Undo example](../Command/README.md))
 - **UML**
     - [UML](UML.puml)
-- [**Code Example**](https://refactoring.guru/design-patterns/mediator/java/example#example-0--mediator-Mediator-java)
+- [**Code Example**](./example)
 - **Pros**
-    - Code Reusability
+    - Undo operation
 - **Cons**
     - ???
 - **Comparision with Other Patterns**
-    - vs Facade (Because of Decoupling)
-        -  Facade gives information hiding , Mediator gives re-usability
+    - vs Command (Because of Undo a feature )
+        -  Command Pattern can undo series of commands, Memento can undo states
+- **Additional Note**
+    - Memento class can be public(non private,cause CareTaker needs reference of Memento) static inner class of Originator class 
