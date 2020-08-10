@@ -5,7 +5,6 @@ note as Note1
     UML is around Build-House example
     Note if one of Step is private method to be invoked by Parent Step(i.e.buildHouse())
     Don't use interface , AbstractBuildHouse should be enough
-
 end note
 class Client #violet
 Client o-> IBuildHouse

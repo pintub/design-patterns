@@ -2,8 +2,9 @@
 - **Naming** `Save object State snapshot(`Movie Memento`) and undo at will`
 - **When To Use**
     - When you want to keep track of state transition of an object and perform save/restore(undo) at will
-    - Encapsulate the state Snapshot into `memento` class , It is strongly dependent on `Original` class , not outside access to getState() of memento object , Only Original class save and restore the memento
-    - Encapsulate the state Snapshot set into `MementoCareTaker` class, It maintains the container of memento objects
+    - Encapsulate the state Snapshot into `memento` class , It is strongly dependent on `Original` class , not outside access to getState() of memento object , Only Original class save and restore the memento.
+    Memento to have same set of fields as that of Original class .
+    - Encapsulate the state Snapshot list into `MementoCareTaker` class, It maintains the container of memento objects
 - **Brute Force Programming**
     - ???
 - **Intuitive Example**
