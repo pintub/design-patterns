@@ -1,0 +1,35 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+note top of Client : Duck duck = new Duck(new ConcreteFlyableBehavior1(), new ConcreteQuackableBehavior1())\n duck.fly()\n duck.quack()
+class Client #violet
+note top of Duck : fly(){\n flyableBehavior.fly()\n}
+Client o-> Duck : uses
+class Duck{
+    - flyableBehavior: IFlyableBehavior
+    - quackableBehavior:IQuackableBehavior
+    + Duck(IFlyableBehavior , IQuackableBehavior)
+    + fly()
+    + quack ()
+}
+Duck o-d-> IFlyableBehavior :uses
+Duck o-d-> IQuackableBehavior : uses
+interface IFlyableBehavior{
+    + fly()
+}
+class ConcreteFlyableBehavior1 implements IFlyableBehavior{
+    + fly()
+}
+class ConcreteFlyableBehavior2 implements IFlyableBehavior{
+    + fly()
+}
+interface IQuackableBehavior{
+    + quack()
+}
+class ConcreteQuackableBehavior1 implements IQuackableBehavior{
+    + quack()
+}
+class ConcreteQuackableBehavior2 implements IQuackableBehavior{
+    + quack()
+}
+@enduml

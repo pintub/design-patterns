@@ -1,0 +1,22 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+class Client #violet
+Client o-> IDuck
+class IDuck{
+    + default fly()
+    + default quack()
+}
+class WildDuck implements IDuck{
+    + fly()
+    + quack()
+}
+class CityDuck implements IDuck{
+    + fly()
+    + quack()
+}
+class RubberDuck implements IDuck{
+    + fly() // sout("No flying)
+    + quack()
+}
+@enduml

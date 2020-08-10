@@ -5,8 +5,11 @@ Note as Note1
     Different type of node(Building, Hotel, School etc) on a Map
     We need to export these class objects to an XML or PDF
 end note
-note top of Client :
+note top of Client : IExportVisitor visitor = new XMLExportVisitor()\n Building b = new Building();\n b.export(visitor)
 class Client #violet
+Client o-d-> Building
+Client o-d-> Hotel
+Client o-d-> IExportVisitor
 interface IExportBehavior{
     + export(visitor: IExportVisitor)
 }
