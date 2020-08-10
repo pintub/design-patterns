@@ -1,0 +1,32 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+note as Note1
+    UML is around Build-House example
+    Note if one of Step is private method to be invoked by Parent Step(i.e.buildHouse())
+    Don't use interface , AbstractBuildHouse should be enough
+
+end note
+class Client #violet
+Client o-> IBuildHouse
+interface IBuildHouse{
+    + default final buildHouse()
+    + abstract buildWalls()
+    + abstract buildPillars()
+    + default buildWindows()
+}
+class AbstractBuildHouse implements IBuildHouse{
+    - private field
+    + equals()
+    + hashcode()
+}
+class WoodenHouse extends AbstractBuildHouse{
+    + buildWalls()
+    + buildPillars()
+}
+class ClassHouse extends AbstractBuildHouse{
+    + buildWalls()
+    + buildPillars()
+    + buildWindows()
+}
+@enduml

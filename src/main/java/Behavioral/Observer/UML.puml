@@ -4,6 +4,7 @@
 note top of Client: IObservable concreteObservable = new ConcreteObservable()\n concreteObservable.register(new ConcreteObserver())\n concreteObservable.notify(this)
 interface IObservable
 interface IObserver
+class Client #violet
 Client o-> IObservable : uses
 interface IObservable {
     + register(observer : IObserver)

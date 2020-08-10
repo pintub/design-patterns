@@ -36,9 +36,13 @@
 - [Mediator Pattern                 ](./src/main/java/Behavioral/Mediator)
 - [Memento Pattern                  ](./src/main/java/Behavioral/Memento)
 - [State Pattern                    ](./src/main/java/Behavioral/State)
-- [Template Method                  ](./src/main/java/Behavioral/Template)
+- [Template Method                  ](./src/main/java/Behavioral/TemplateMethod)
 - [Strategy Pattern                 ](./src/main/java/Behavioral/Strategy)
 - [Visitor Pattern					](./src/main/java/Behavioral/Visitor)
+
+##### Additional Programming Patterns
+- Null Object Pattern
+- MVC
 
 ##### UML Diagrams
 - UMLs' are drawn using [Plant UML plugin](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)
