@@ -1,0 +1,39 @@
+#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
+
+@startuml
+Note as Note1
+    Different type of node(Building, Hotel, School etc) on a Map
+    We need to export these class objects to an XML or PDF
+end note
+note top of Client :
+class Client #violet
+interface IExportBehavior{
+    + export(visitor: IExportVisitor)
+}
+IExportBehavior o-> IExportVisitor
+XMLExportVisitor o-l-> Building
+XMLExportVisitor o-l-> Hotel
+PDFExportVisitor o-l-> Building
+PDFExportVisitor o-l-> Hotel
+note bottom of Building :export(IExportVisitor){\n visitor.export(this) \n}
+class Building implements IExportBehavior{
+    ...
+    + export(IExportVisitor)
+}
+class Hotel implements IExportBehavior{
+    ...
+    + export(IExportVisitor)
+}
+interface IExportVisitor{
+    + export(Building)
+    + export(Hotel)
+}
+class XMLExportVisitor implements IExportVisitor{
+    + export(Building)
+    + export(Hotel)
+}
+class PDFExportVisitor implements IExportVisitor{
+    + export(Building)
+    + export(Hotel)
+}
+@enduml

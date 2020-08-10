@@ -40,10 +40,10 @@
 - [Strategy Pattern                 ](./src/main/java/Behavioral/Strategy)
 - [Visitor Pattern					](./src/main/java/Behavioral/Visitor)
 
-##### Additional Programming Patterns
-- Null Object Pattern
-- MVC
-
 ##### UML Diagrams
 - UMLs' are drawn using [Plant UML plugin](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)
 https://plantuml.com/class-diagram
+
+#### Additional Patterns
+- Null Object Pattern
+- MVC
