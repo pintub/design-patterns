@@ -45,5 +45,11 @@
 https://plantuml.com/class-diagram
 
 #### Additional Patterns
-- Null Object Pattern
+- [Null Object Pattern](./src/main/java/NullObject)
 - MVC
+
+#### SOLID Design Principles
+- [Details](./src/main/java/DesignPrinciples)
+
+#### The Principles of Good Programming (`TODO`)
+- https://java-design-patterns.com/principles/
