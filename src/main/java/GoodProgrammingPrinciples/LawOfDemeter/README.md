@@ -1,0 +1,21 @@
+##### Law of Demeter `Name LoD makes no sense , Demeter=> Zeus sister`
+- **Alias** 
+    - `Don't talk to Strangers`
+    - `Principle of Least knowledge`
+- **DOs'**  Consider a class C having a method M. Now suppose you have created an instance of the class C named O. The Law of Demeter specifies that the method M can invoke the following types:
+    - Methods/Fields of the same object, i.e., the object “O” itself
+    - Objects that have been passed as an argument to the method “M”
+    - Local objects, i.e., objects that have been created inside the method “M”
+    - Static/Non-static component objects of the class “C”
+- **DONTs'**
+    - Example: Class1 {method1} , Class2{getXXX()}, Class3{getYYY()}
+    Method call changing `obj2.getXXX().getYYY()` . If `getXXX()` return types don't fit above rules ,violates LoD.
+    - Calling a method on Return type inside a method ,if return types don't fit above rules.
+- **When to Implement**
+    - This law states ,you interact only with your friends . It's meant for loose coupling ,also leads to abstraction(Read next point).
+    - The rationale I think behind preventing method chaining is, once you code on getYYY() ,if it changes current class/`Class1` has to be changed . It's similar to Unit testing's rule that, Don't mock 3rd level dependency as if higher dependency implementation changes, your UT will fail. Instead, create a wrapper method in `Class2` as `getZZZ(){ getXXX().getYYY() }` so that `Class1` will depend on getZZZ() to get `yyy` and it's implementation/internal state can change in future without breaking `Class1`. It leads to abstraction . In this case, changing getYYY() doesn't affect `Class1` , it only affects `Class2` of `obj2` which is the friend of `Class3`.
+- **When Not to Implement**
+    - LoD not to be treated as `Law of Dots` or `Law of method chaining`.
+    - Another rationale against this rule is , if `getYYY()` is a public method of `Class3` (which is ideally the case) and public method contract should always be maintained (Effective java :innocent: ) And it changes less frequently or never, in that case method chaining doesn't pose any threat .
+    - But it looks easier to follow the rule than this reasoning , so better to follow the rule . Yet again, not blindly ,of course with rationale/logic in mind .
+    - Builder pattern chaining doesn't violate LoD, and you already know why. 

@@ -51,5 +51,13 @@ https://plantuml.com/class-diagram
 #### SOLID Design Principles
 - [Details](./src/main/java/DesignPrinciples)
 
-#### The Principles of Good Programming (`TODO`)
-- https://java-design-patterns.com/principles/
+#### [The Principles of Good Programming](https://java-design-patterns.com/principles/)
+- `TODO`
+- [Law of Demeter](./src/main/java/GoodProgrammingPrinciples/LawOfDemeter)
+- [Robustness Principle](./src/main/java/GoodProgrammingPrinciples/Robustness)
+- Speculative Generality/YAGNI/Just in Time Design `Don't generalize or create interfaces if you don't need it know . But I am yet to find, any logical reasoning or disadvantages of having these interfaces  beforehand`
+
+#### [Code Smell/Anti-Pattern](https://sourcemaking.com/refactoring)
+- `TODO`
+- [Primitive Obsession](./src/main/java/NullObject)
+- Switch Statements/If-Else Branching
