@@ -43,6 +43,7 @@
 ##### UML Diagrams
 - UMLs' are drawn using [Plant UML plugin](https://plugins.jetbrains.com/plugin/7017-plantuml-integration)
 https://plantuml.com/class-diagram
+- Use online [Plain UML Editor](https://plantuml-editor.kkeisuke.com/) to see the Class diagam using .puml content.
 
 #### Additional Patterns
 - [Null Object Pattern](./src/main/java/NullObject)
