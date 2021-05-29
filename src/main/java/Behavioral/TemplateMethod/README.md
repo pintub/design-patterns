@@ -1,14 +1,15 @@
 ##### Template Method Pattern
-- **Naming** `Template=Skeleton of a algorithm with overridable intermediate Steps`
+- **Naming** `Template=Skeleton of a algorithm with sequqnce of overridable intermediate Steps`
 - **When To Use**
     - When you have algorithm with a Step which invokes sequence of other steps (let's call it parentStep and should be final)
     , few steps are overridable in different classes (concreteStep)
     , few steps should be overridable in different classes (abstractStep),
     Use TEMPLATE METHOD Pattern.
+    - Also we dont want client to know about this sequence of steps, thus client will know about the complex parent step. And the parent step si fix , ie. no scope of change in future
 - **Brute Force Programming**
     - Multiple class with redundant coding for repeated steps 
 - **Intuitive Example**
-    - Building House with buildHouse() Step(final method defining sequence of otherSteps , yes self-use , But no use as this method is final ) ,  abstract steps , and concrete Steps
+    - Building House with buildHouse() Step(final method defining sequence of otherSteps , yes self-use pattern , But no issues as buildHouse() method is final ) ,  abstract steps , and concrete Steps
 - **UML**
     - [UML](UML.puml)
 - [**Code Example**](https://www.journaldev.com/1763/template-method-design-pattern-in-java#template-method-abstract-class)
