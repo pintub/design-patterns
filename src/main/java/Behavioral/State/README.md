@@ -17,8 +17,7 @@
     - Any workflow transaction 
 - **UML**
     - [UML](UML.puml)
-- [**Code Example**]
-    - `TODO`
+- [**Code Example**](https://www.geeksforgeeks.org/state-design-pattern/)
 - **Pros** 
     - Avoid if-else , rightly If-else violates 'S' in SINGLE
 - **Cons**
