@@ -1,7 +1,6 @@
 #*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
 
 @startuml
-note top of Client: IValidationHandler handler = new ConcreteHandler1();\n handler.setNext(new ConcreteHandler2())\n handler.validate()\n //Client can decide order
 class Client #violet
 note top of Context: Context is the sentence of the language,\n which will be interpreted
 class Context
