@@ -1,9 +1,9 @@
 ##### Mediator Pattern
 - **Naming** `Interacting via a Mediator/UI-Controller`
-- **When To Use**
-    - When two classes are tightly coupled, any changes to these make them not-reusable. Create a mediator between them.
-    - Note `re-usability` is major benefit .
+- **When To Use**    
+    - Note `Decouling` is major benefit .
     - Actual Classes/components interact with Mediator and upon notification Mediator interacts with other components. It sounds somethings like master-slave pattern to me . `Is Mediator a master component here` ? Notice this in UML .
+    - Mediator is aware of all components and each compoenent is aware of mediator , thus one compoenent can interact with other 
 - **Brute Force Programming**
     - Classes interacting directly
 - **Intuitive Example**
@@ -12,11 +12,10 @@
     - Master-slave usage. Can Mediator be Master ?
 - **UML**
     - [UML](UML.puml)
-- [**Code Example**](https://refactoring.guru/design-patterns/mediator/java/example#example-0--mediator-Mediator-java)
+- [**Explanation**](https://stackoverflow.com/a/9226745/2653389)
 - **Pros**
-    - Code Reusability
+    - Code Decoupling
 - **Cons**
     - ???
 - **Comparision with Other Patterns**
-    - vs Facade (Because of Decoupling)
-        -  Facade gives information hiding , Mediator gives re-usability
+    -

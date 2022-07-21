@@ -2,6 +2,7 @@
 - SINGLE responsibility
     - A class should have a single reason to change according to Uncle Bob
     -  https://www.youtube.com/watch?v=AEnePs2Evg0
+    -  [Why it is required](https://stackify.com/solid-design-principles/)
 - OPEN/CLOSE principle
     - Never rewrite , rather create new class . Achievable by poly-morphism and DI .
     - `Class1->Class2`(violating principle). 
@@ -18,6 +19,7 @@
     - Smaller & more interfaces are better than lesser & large interfaces
     - It leads to favoring Composition over inheritance . There are many advantages to this. `STRATEGY` pattern.
     - https://www.youtube.com/watch?v=xahwVmf8itI
+    - [vs SRP](https://stackoverflow.com/a/14388411/2653389)
 - DEPENDENCY INJECTION
     - Never depend on concrete implementation, rather depend on abstraction(Interfaces)
     - https://www.youtube.com/watch?v=S9awxA1wNNY

@@ -20,10 +20,10 @@
 - **Comparision with Other Patterns**
 - **Additional Note**
     - This Pattern again says, Prefer Composition to Inheritance. [Refer Addtional Note](../../Structural/Bridge/README.md) .
-    Also , inheritance provides reusability (again very thin) only if sub-class has exact same behavior or partially same behavior(super.behavior(); //Do something extra). In this case, you can sub-class.
-    Else if there can be cases like this . There are 4 sub-class (let's say Duck sub-class) objects can fly , but only 2 Duck sub-class which can use default fly() of parent class(this is re-use) , other 2 Duck sub-class have completely different fly() (so, they can't reuse the parent default fly()).
-    TO add complexity , Let's think one Duck can fly(), breaks 'L' in SOLID
-    TO add additional complexity, Duck Class A and B have same fly() behavior, which needs re-usability along siblings ,which inheritance can't provide . `Inheritance can only give re-usability in the hierarchy` , not to siblings.
+    Also , inheritance provides reusability (again very thin) only if sub-class has exact same behavior or partially same behavior(super.behavior(); //Do something extra). In this case, you can sub-class.</BR>
+    Else if there can be cases like this . There are 4 sub-class (let's say Duck sub-class) objects can fly , but only 2 Duck sub-class which can use default fly() of parent class(this is re-use) , other 2 Duck sub-class have completely different fly() (so, they can't reuse the parent default fly()).</BR>
+    To add complexity , Let's think one Duck can't fly(), breaks 'L' in SOLID</BR>
+    To add additional complexity, Duck Class A and B have same fly() behavior, which needs re-usability along siblings ,which inheritance can't provide . `Inheritance can only give re-usability in the hierarchy` , not to siblings.</BR>
     
     In-short, `Inheritance provides re-use in very restricted cases only in hierarchy direction`. Ahh Inheritance = re-usability is a myth (at-least not completely true)
     

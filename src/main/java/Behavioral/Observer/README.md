@@ -8,9 +8,9 @@
 - **Intuitive Example**
     - Java-way of Event handling
 - **UML**
-    - [UML](UML.puml) [Example](https://www.geeksforgeeks.org/observer-pattern-set-1-introduction/) -> Observer is registered to IObservable using `IObservable.add(IObserver)`
-    - [Slight variation](UML.puml) [Example](https://www.tutorialspoint.com/design_pattern/observer_pattern.htm) -> Observer also has a reference to IObservable using `new ConcreteObserver(new ConcreteObservable); `
-    So, bi-directional reference is there ,notice the slight change in `update()`
+    - [UML](UML.puml) [Example](https://www.geeksforgeeks.org/observer-pattern-set-1-introduction/) -> (IObservable-Observer Registration at Observer end) Observer is registered to IObservable using `IObservable.add(IObserver)`
+    - [Slight variation](UML.puml) [Example](https://www.tutorialspoint.com/design_pattern/observer_pattern.htm) -> (IObservable-Observer Registration at IObservable end) Observer has a reference to IObservable using `new ConcreteObserver(new ConcreteObservable); ` and calls `concreteObservable.attach(concreteObserver)`
+    So, bi-directional reference is there
 - [**Code Example**]
     - `TODO`
 - **Pros** 
@@ -18,5 +18,6 @@
     - Open-Close principle
 - **Cons**
     - Observable does 2 things ,which violates 'S' in SOLID
-        - `add(IObservable)`, `remove(IObservable)`, `notify()` These are responsibility wrt pattern
+        - `add(IObservable)`, `remove(IObservable)`, `notify()` These are >1 responsibility handled by Observable/Subject class
         - `setState()`, `getState()` Keeping track of state change
+    - This pattern needs tight coupling of Observer and Observable , i.e. Observable needs to know about Observer . Kafka solves this problem 

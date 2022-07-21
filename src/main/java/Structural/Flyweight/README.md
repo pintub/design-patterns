@@ -19,3 +19,5 @@
     - vs Singleton (Due to caching)
         - Singleton ensures one object, which can be mutable (Though Enum Singletons are immutable), Flyweight objects are immutable
         - Singleton ensures one and only object, Flyweight pattern has no such restriction
+    - intrinstic field vs static field
+        - Static field is class scope , same for all class objects . Intrinstic field are of object scope , but they are usually immutable
