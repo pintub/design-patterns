@@ -1,5 +1,3 @@
-#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
-
 @startuml
 class Client #violet
 class IComponent <<interface>>
@@ -11,7 +9,7 @@ interface IComponent{
 class LeafComponent implements IComponent{
     + execute()
 }
-note top of CompositeComponent : Delegates task to list of components\n execute()=IComponent1.execute()+IComponent1.execute()+...
+note top of CompositeComponent : Delegates task to list of components\n execute()=IComponent1.execute()+IComponent1.execute()+...\n Note - Here done using iteration
 class CompositeComponent implements IComponent{
     - components: List<IComponent>
     + addComponent()

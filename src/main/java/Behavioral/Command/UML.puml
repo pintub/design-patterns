@@ -1,5 +1,3 @@
-#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
-
 @startuml
 note top of Client: CommandInvoker invoker = new CommandInvoker();\n invoker.setCommand(new ConcreteCommand1())\n invoker.executeCommand()
 class Client #violet

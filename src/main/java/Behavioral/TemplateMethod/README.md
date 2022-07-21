@@ -16,8 +16,8 @@
     - Code Re-usability achieved because of inheritance
 - **Cons**
     - ???
-- **Comparision with Other Patterns**
-    - vs Decorator(Because of Code-reusability)
+- **Comparison with Other Patterns**
+    - vs Decorator(Because of Code-usability)
         - Decorator also adds enhancement of a default behavior using Composition, and the advantage of composition is flexibility .So client can add toppings in the order it wants, which gives flexible dynamic behavior .
         But in some cases, this flexibility is not required and algorithm has run a given sequence i.e.e static sequence , If we let client do this ordering mistake is bound to happen, thus we can use Template pattern(inheritance) with a final parentStep, to give as this static sequence of child steps.   
 - **Additional Note**
