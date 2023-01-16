@@ -5,6 +5,7 @@ interface IFormView << Interface1>>
 interface IMediaResource << Interface2>>
 note top of IFormView : Many Books refer it as Abstraction,\n Not to be confused with Interface\n or abstract class
 note top of IMediaResource : Many Books refer it as Implementation,\n Not to be confused with Interface\n Implementation
+note top of LongFormView : display() {mediaResource.details()}
 Client -right-> IFormView
 class LongFormView implements IFormView
 class ShortFormView implements IFormView

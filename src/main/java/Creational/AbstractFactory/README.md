@@ -8,8 +8,8 @@
 - **Intuitive Example**
     - platform-independent UI(Mac specific Button + Mac Form for Mac) and (Windows specific Button + Windows Form for Windows)
 - **UML**
-    - [Factory building family of same type objects](FamilyOfSameProductTypeObjectsUML.puml)
-    - [Factory building family of Different type objects](FamilyOfDifferentProductTypeObjectsUML.puml)
+    - [Factory building family of same type objects](FamilyOfSameProductTypeObjectsUML.puml) - You can ignore this
+    - [Factory building family of Different type objects](FamilyOfDifferentProductTypeObjectsUML.puml) - Example, for volkswagen, it needs engine, battery , wheels specific to that car. So factory would have createEngine(), createWheel() etc.
 - **Code Example**
     - `TODO`
 - **Pros** `Same as Factory method Pattern if you have already seen`

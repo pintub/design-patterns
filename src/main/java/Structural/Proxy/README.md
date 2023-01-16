@@ -2,7 +2,7 @@
 - **Naming** `Proxy is a dummy in place of a real object`
 - **When To Use**
     - When there is an object which is resource intensive(heavy), or remote object(proxy can be used as cache here), you can use a proxy object which is like a gateway before access an actual object . Web browser proxy settings also one kind of proxy .
-    - Client accesses proxy object first .If data available, proxy returns data, else proxy accesses original object.     
+    - Client accesses proxy object first .If data available, proxy returns data, else "proxy accesses original object". If you think of caching strategy, it's like "Read-through" strategy. Cache itself gets data from DB.     
 - **Brute Force Programming**
     - Eagerly accessing the original heavy object
 - [**UML**](UML.puml)
@@ -14,6 +14,6 @@
     - Open/Closed Principle. You can introduce new proxies without changing the service or clients.   
 - **Cons**
     - ???
-- **Comparision with Other Patterns**
+- **Comparison with Other Patterns**
     - vs Prototype (Because of Naming :innocent:)
         - Prototype is for cloning whereas Proxy is a dummy for Real service

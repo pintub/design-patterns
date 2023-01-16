@@ -7,7 +7,7 @@
     - ~~w/o Explicit static Class~~ `Not considered as Pattern`
     - w/ Explicit static Class
 - **Pros**
-    - Reduced number of constructors and increases reusability of `withProperty()` methods
+    - Reduced number of constructors and increases re-usability of `withProperty()` methods
 - **Cons**
     - Complexity increases if Class has sub-classes `Covered in Effective Java Item2`
 - [More Info in Effective Java Item2](https://github.com/pintub/EffectiveJava-Summary/blob/master/EffectiveJavaSummary/CreateAndDestroyObjects.todo)
