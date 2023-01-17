@@ -2,7 +2,14 @@
 note as Note1
     UML is around Build-House example
     Note if one of Step is private method to be invoked by Parent Step(i.e.buildHouse())
-    Don't use interface , AbstractBuildHouse should be enough
+
+    public final void buildHouse(){\n
+        buildFoundation();\n
+        buildPillars();\n
+        buildWalls();\n
+        buildWindows();\n
+        System.out.println("House is built.");\n
+    }
 end note
 class Client #violet
 Client o-> IBuildHouse

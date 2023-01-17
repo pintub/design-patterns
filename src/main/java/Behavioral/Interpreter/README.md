@@ -13,6 +13,6 @@
     - ???
 - **Cons**
     - ???    
-- **Comparision with Other Patterns**
+- **Comparison with Other Patterns**
     - Composite Pattern (because of UML diagram)
-        - Pattern purpose is different ,one is Structural , other is Behavioral pattern. That gives an idea that behavioral pattern solves a particular specific responsibility(instead of generic) issue . For example, Interpreter helps interpret a sentence in a language, Observer helps in Nofity-Subscriber problem .  Interpreter can be thought as a usecase of composite pattern iff all class has `same behavior`
+        - Pattern purpose is different ,one is Structural , other is Behavioral pattern. That gives an idea that behavioral pattern solves a particular specific responsibility(instead of generic) issue . For example, Interpreter helps interpret a sentence in a language. Interpreter can be thought as a use-case of composite pattern iff all class has `same behavior`

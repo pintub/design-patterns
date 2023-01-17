@@ -1,5 +1,3 @@
-#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
-
 @startuml
 note top of Client : Duck duck = new Duck(new ConcreteFlyableBehavior1(), new ConcreteQuackableBehavior1())\n duck.fly()\n duck.quack()
 class Client #violet

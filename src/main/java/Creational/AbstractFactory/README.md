@@ -19,6 +19,6 @@
     - You avoid tight coupling between the creator and the concrete products.
 - **Cons**
     - ???
-- **Comparision with Other Patterns**
+- **Comparison with Other Patterns**
     - vs Factory (Beacuse of name)
         - Factory pattern is a factory of single objects , whereas AbstractFactory is a factory of family of related objects 

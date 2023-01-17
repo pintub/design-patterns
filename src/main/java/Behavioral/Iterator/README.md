@@ -18,5 +18,5 @@
     - Ease of use for Client
 - **Cons**
     - ???
-- **Comparision with Other Patterns**
+- **Comparison with Other Patterns**
     - Just a thought, Should ConcreteIterator class be inner class of ConcreteIterableCollection class as both are tightly coupled . 

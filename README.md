@@ -45,20 +45,22 @@
 https://plantuml.com/class-diagram
 - Use online [Plain UML Editor](https://plantuml-editor.kkeisuke.com/) to see the Class diagam using .puml content.
 
-#### Additional Patterns
+##### Additional Patterns
 - [Null Object Pattern](./src/main/java/NullObject)
 - MVC
 
-#### SOLID Design Principles
+##### SOLID Design Principles
 - [Details](./src/main/java/DesignPrinciples)
 
-#### [The Principles of Good Programming](https://java-design-patterns.com/principles/)
+##### [The Principles of Good Programming](https://java-design-patterns.com/principles/)
 - `TODO`
 - [Law of Demeter](./src/main/java/GoodProgrammingPrinciples/LawOfDemeter)
 - [Robustness Principle](./src/main/java/GoodProgrammingPrinciples/Robustness)
 - Speculative Generality/YAGNI/Just in Time Design `Don't generalize or create interfaces if you don't need it know . But I am yet to find, any logical reasoning or disadvantages of having these interfaces  beforehand`
 
-#### [Code Smell/Anti-Pattern](https://sourcemaking.com/refactoring)
+##### [Code Smell/Anti-Pattern](https://sourcemaking.com/refactoring)
 - `TODO`
 - [Primitive Obsession](./src/main/java/NullObject)
 - Switch Statements/If-Else Branching
+
+##### [Discussion on inheritance vs composition, Refer Strategy Pattern additional Note](https://github.com/pintub/design-patterns/tree/master/src/main/java/Behavioral/Strategy)

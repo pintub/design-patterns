@@ -1,5 +1,3 @@
-#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
-
 @startuml
 note as Note1
   This Example is around how UI Controller works in UI MVC pattern

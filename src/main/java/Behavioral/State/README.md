@@ -22,5 +22,5 @@
     - Avoid if-else , rightly If-else violates 'S' in SINGLE
 - **Cons**
     ???
-- **Comparision with Other Patterns**
+- **Comparison with Other Patterns**
 - **Additional Note**

@@ -8,9 +8,9 @@
 - **Intuitive Example**
     - Java-way of Event handling
 - **UML**
-    - [UML](UML.puml) [Example](https://www.geeksforgeeks.org/observer-pattern-set-1-introduction/) -> (IObservable-Observer Registration at Observer end) Observer is registered to IObservable using `IObservable.add(IObserver)`
-    - [Slight variation](UML.puml) [Example](https://www.tutorialspoint.com/design_pattern/observer_pattern.htm) -> (IObservable-Observer Registration at IObservable end) Observer has a reference to IObservable using `new ConcreteObserver(new ConcreteObservable); ` and calls `concreteObservable.attach(concreteObserver)`
-    So, bi-directional reference is there
+    - [UML](UML.puml) [Example](https://www.geeksforgeeks.org/observer-pattern-set-1-introduction/) -> (IObservable-Observer Registration at Observer end) Observer is registered to IObservable using `IObservable.register(IObserver)`
+    - [Slight variation](UML.puml) [Example](https://www.tutorialspoint.com/design_pattern/observer_pattern.htm) -> (IObservable-Observer Registration at IObservable end) Observer has a reference to IObservable using `new ConcreteObserver(new ConcreteObservable); ` and calls `concreteObservable.register(concreteObserver)`
+    So, bidirectional reference is there.
 - [**Code Example**]
     - `TODO`
 - **Pros** 

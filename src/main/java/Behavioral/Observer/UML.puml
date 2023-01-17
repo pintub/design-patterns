@@ -5,11 +5,12 @@ interface IObserver
 class Client #violet
 Client o-> IObservable : uses
 interface IObservable {
+    - observers : List<IObserver>
     + register(observer : IObserver)
     + deRegister(observer : IObserver)
     + notify() #notifies all observers by calling update()
 }
-note left of ConcreteObservable: notify() can be called from client\n or from ConcreteObservable based on state change
+note left of ConcreteObservable: notify() can be called from client\n or from ConcreteObservable based on state change inside setState() method\n\n notify() {\n forEach observers:\n observer.update(this)\n }\n\n setStete(){\n //Set State\n notify();\n }
 class ConcreteObservable implements IObservable{
     + register(observer : IObserver)
     + deRegister(observer : IObserver)

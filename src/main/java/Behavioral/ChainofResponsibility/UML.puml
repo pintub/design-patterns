@@ -1,5 +1,3 @@
-#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
-
 @startuml
 note top of Client: IValidationHandler handler = new ConcreteHandler1();\n handler.setNext(new ConcreteHandler2())\n handler.validate()\n //Client can decide order
 class Client #violet
@@ -9,14 +7,14 @@ interface IValidationHandler{
     + setNext(handler: IValidationHandler)
     + validate()
 }
-note top of AbstractValidationHandler: if (next != null)\n return next.validate();
+note top of AbstractValidationHandler: validate(){\n if (next != null)\n return next.validate();\n }
 AbstractValidationHandler o-up-> IValidationHandler
 class AbstractValidationHandler implements IValidationHandler{
     - next : IValidationHandler
     + setNext(handler: IValidationHandler) <<abstract>>
     + validate()
 }
-note top of ConcreteHandler1: //some validate logic\n super.validate()
+note top of ConcreteHandler1: //Own validate logic\n super.validate() //Calling next validator
 class ConcreteHandler1 implements AbstractValidationHandler{
     - next : IValidationHandler
     + setNext(handler: IValidationHandler)

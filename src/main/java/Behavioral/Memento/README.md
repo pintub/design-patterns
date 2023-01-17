@@ -16,7 +16,7 @@
     - Undo operation
 - **Cons**
     - ???
-- **Comparision with Other Patterns**
+- **Comparison with Other Patterns**
     - vs Command (Because of Undo a feature )
         -  Command Pattern can undo series of commands, Memento can undo states
 - **Additional Note**

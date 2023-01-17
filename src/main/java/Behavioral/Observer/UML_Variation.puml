@@ -1,16 +1,16 @@
-#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
-
 @startuml
-note top of Client: IObservable concreteObservable = new ConcreteObservable()\n IObserver observer = new ConcreteObserver(concreteObservable)\n concreteObservable.register(observer)\n concreteObservable.notify()
+note top of Client: IObservable concreteObservable = new ConcreteObservable()\n IObserver observer = new ConcreteObserver(concreteObservable); //ConcreteObserver() constructor calls concreteObservable.register(observer)\n concreteObservable.notify()
 interface IObservable
 interface IObserver
+class Client #violet
 Client o-> IObservable : uses
 interface IObservable {
+    - observers : List<IObserver>
     + register(observer : IObserver)
     + deRegister(observer : IObserver)
     + notify() #notifies all observers by calling update()
 }
-note left of ConcreteObservable: notify() can be called from client\n or from ConcreteObservable based on state change
+note left of ConcreteObservable: notify() can be called from client\n or from ConcreteObservable based on state change inside setState() method\n\n notify() {\n forEach observers:\n observer.update()\n }\n\n setStete(){\n //Set State\n notify();\n }
 class ConcreteObservable implements IObservable{
     + register(observer : IObserver)
     + deRegister(observer : IObserver)
@@ -21,11 +21,14 @@ class ConcreteObservable implements IObservable{
 }
 IObservable "1" o-> "many" IObserver
 interface IObserver{
-    + update(IObservable)
+    - observable : IObservable
+    + update()
 }
+note right of ConcreteObserver: ConcreteObserver(IObservable){\n observable.add(this)\n }
 class ConcreteObserver implements IObserver{
     - concreteObservable: ConcreteObservable
-    + update(IObservable) #Once notified calls doSomething()
+    + ConcreteObserver(observable : IObservable): void
+    + update() #Once notified calls doSomething()
     - doSomething()
 }
 ConcreteObserver o-left-> ConcreteObservable

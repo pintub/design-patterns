@@ -1,5 +1,3 @@
-#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
-
 @startuml
 note top of Client : /*Client can access both Context & IState*/\n IState initialState = new ConcreteState1()\n Context context = new Context(initialState)\n context.behavior1()
 class Client #violet
@@ -11,7 +9,7 @@ class Context{
     + Context(state)
     + behavior1()
     + behavior2()
-    - default changeState()
+    - default changeState() //Method to support state transition
 }
 interface IState{
     + setContext(context : Context)
@@ -21,7 +19,7 @@ interface IState{
 Context o-> IState
 ConcreteState1 o-> Context
 ConcreteState2 o-> Context
-note top of ConcreteState1 : behavior1(){\n this.context.changeState(new ConcreteState2())\n}
+note top of ConcreteState1 : behavior1(){\n //Do Something\n this.context.changeState(new ConcreteState2())\n}
 class ConcreteState1 implements IState{
     - context : Context
     + setContext(context : Context)

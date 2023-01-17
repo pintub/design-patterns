@@ -1,5 +1,3 @@
-#*.puml can be used with Intellij PlantUML Plugin to generate the UML diagrams
-
 @startuml
 class Client #violet
 note top of Context: Context is the sentence of the language,\n which will be interpreted

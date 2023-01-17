@@ -20,7 +20,7 @@
     - Undoing Command or queue of commands
 - **Cons**
     - 
-- **Comparision with Other Patterns**
+- **Comparison with Other Patterns**
     - vs Facade Pattern (because decouples Client and Server)
         - Facade is a wrapper over a service , Command encapsulates request or Command 
     - vs CoR(queuing or chaining)
