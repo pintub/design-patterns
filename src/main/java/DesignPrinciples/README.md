@@ -21,5 +21,6 @@
     - https://www.youtube.com/watch?v=xahwVmf8itI
     - [vs SRP](https://stackoverflow.com/a/14388411/2653389)
 - DEPENDENCY INJECTION
+    - Definition : High-level modules should not depend on low-level modules. Both should depend on abstractions. 
     - Never depend on concrete implementation, rather depend on abstraction(Interfaces)
     - https://www.youtube.com/watch?v=S9awxA1wNNY
