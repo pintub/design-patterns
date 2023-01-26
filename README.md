@@ -9,7 +9,7 @@
     - [Behavioral](#behavioral)  `11 Patterns`
     
 ##### Creational
-###### Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+###### Creational patterns "abstracts" various object creation mechanisms, which increase flexibility and reuse of existing code.
 - [SingleTon](./src/main/java/Creational/SingleTon)
 - [Factory Method](./src/main/java/Creational/Factory)
 - [Abstract Factory Pattern](./src/main/java/Creational/AbstractFactory)
@@ -17,7 +17,7 @@
 - [Prototype](./src/main/java/Creational/Prototype)
 
 ##### Structural
-###### How objects are related, how to assemble classes into larger structures while keeping these structures flexible and efficient.
+###### How classes/objects are structured/defined, mostly around inheritance & composition. How to assemble classes into larger structures while keeping these structures flexible and efficient.
 - [Facade   ](./src/main/java/Structural/Facade)	
 - [Composite](./src/main/java/Structural/Composite)	
 - [Decorator](./src/main/java/Structural/Decorator)	
@@ -27,7 +27,7 @@
 - [Flyweight](./src/main/java/Structural/Flyweight)
 
 ##### Behavioral
-###### How objects achieve cohesion & loose coupling , i.e. These are meant to solve specific problems .
+###### Talks about specific problems & How >1 objects communicate which each other and solve the problem, which single object can not solve. Example observer, COR etc.
 - [Chain of Responsibility Pattern  ](./src/main/java/Behavioral/ChainofResponsibility)
 - [Observer Pattern                 ](./src/main/java/Behavioral/Observer)
 - [Interpreter Pattern              ](./src/main/java/Behavioral/Interpreter)
@@ -47,6 +47,7 @@ https://plantuml.com/class-diagram
 
 ##### Additional Patterns
 - [Null Object Pattern](./src/main/java/NullObject)
+- Enum + If-Else vs Polymorphism
 - MVC
 
 ##### SOLID Design Principles
