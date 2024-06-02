@@ -22,8 +22,8 @@
         - Both looks similar. But Decorator can recursively add more than one topping like a stack, which is not possible in Adapter
     - vs Composite (Because of recursion)
         - Think of Decorator as a topping and Composite as a tree of components with same behavior . Both for different purpose.
-        - Decorator recursively adding toppings (Base behavior + Topping1 + Topping2 so on...)
-        Composite recursively traverse through tree and sums/aggregates the behavior of all components .
+        - Decorator recursively adding toppings (Base behavior + Topping1 + Topping2 so on...) <br/>
+        Composite ~recursively~ iteratively traverse through tree and sums/aggregates the behavior of all components .
         - `3rd Feb,2022` I think, for Decorator order of behavior matters(eg, base pizza -> then sauce -> then 
           jaleppino) , but not in composite
          
