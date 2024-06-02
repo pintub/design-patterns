@@ -1,6 +1,7 @@
 @startuml
 note top of Client: CommandInvoker invoker = new CommandInvoker();\n invoker.setCommand(new ConcreteCommand1())\n invoker.executeCommand()
 class Client #violet
+note top of CommandInvoker : Example:Remote Control
 Client o-> CommandInvoker : calls
 class CommandInvoker{
     + setCommand(command : ICommand)
@@ -11,22 +12,26 @@ interface ICommand{
     + execute()
     + unExecute()
 }
-note bottom of ConcreteCommand1:execute() calls ConcreteCommandReceiver1.action()
+note bottom of ConcreteCommand1:execute() calls ConcreteCommandReceiver1.action()\nExample:TurnOnCommand
 class ConcreteCommand1 implements ICommand{
     + execute()
     + unExecute()
 }
-note bottom of ConcreteCommand2:execute() calls ConcreteCommandReceiver2.action()
+note bottom of ConcreteCommand2:execute() calls ConcreteCommandReceiver2.action()\nExample:VolumeCommand
 class ConcreteCommand2 implements ICommand{
     + execute()
     + unExecute() //calls ConcreteCommandReceiver2.action()
 }
+note bottom of ConcreteCommandReceiver1 : Device#turnOn(), #turnOff
 class ConcreteCommandReceiver1{
     + action()
+    + undo()
 }
 ConcreteCommand1 o-down> ConcreteCommandReceiver1 : calls
-ConcreteCommand2 o-> ConcreteCommandReceiver2 : calls
+ConcreteCommand2 o-down> ConcreteCommandReceiver2 : calls
+note bottom of ConcreteCommandReceiver2 : Stereo#increase(), #decrease()
 class ConcreteCommandReceiver2{
     + action()
+    + undo()
 }
 @enduml
