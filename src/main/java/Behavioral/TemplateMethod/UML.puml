@@ -11,6 +11,7 @@ note as Note1
         System.out.println("House is built.");\n
     }
 end note
+note top of Client : IBuildHouse buildHouse = new WoodenHouse();\nbuildHouse.buildHouse()
 class Client #violet
 Client o-> IBuildHouse
 interface IBuildHouse{
