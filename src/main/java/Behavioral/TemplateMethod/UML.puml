@@ -1,26 +1,22 @@
 @startuml
 note as Note1
     UML is around Build-House example
-    Note if one of Step is private method to be invoked by Parent Step(i.e.buildHouse())
-
-    public final void buildHouse(){\n
-        buildFoundation();\n
-        buildPillars();\n
-        buildWalls();\n
-        buildWindows();\n
-        System.out.println("House is built.");\n
     }
 end note
 note top of Client : IBuildHouse buildHouse = new WoodenHouse();\nbuildHouse.buildHouse()
 class Client #violet
 Client o-> IBuildHouse
 interface IBuildHouse{
-    + default final buildHouse()
+    + buildHouse()
     + abstract buildWalls()
     + abstract buildPillars()
     + default buildWindows()
 }
+note top of AbstractBuildHouse: public final void buildHouse(){\n buildFoundation();\n buildPillars();\n buildWalls();\n buildWindows();\n System.out.println("House is built.");\n
 class AbstractBuildHouse implements IBuildHouse{
+    + public final buildHouse()
+    + abstract buildWalls()
+    + abstract buildPillars()
     - private field
     + equals()
     + hashcode()
