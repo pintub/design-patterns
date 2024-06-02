@@ -1,5 +1,7 @@
 ##### Command Pattern
-- **Naming** `Encapsulating Command or Request and Decouple a CommandInvoker and CommandReceiver`
+- **Naming**
+    - `Encapsulating Command or Request` 
+    - `Decouple CommandInvoker and CommandReceiver`. Client only passes command to commandInvoker, unaware of who is CommandReceiver and how command will be executed
 - **When To Use**
     - When you want to parameterize the CommandReceiver behavior by encapsulating Command
     - When Client need to maintain a list of commands ,i.e. a MacroCommand delegating task to mini commands . Yet again Note , MacroCommand is only useful if it is re-usable, else listing should be handling at Client Side , else If there are 'n' number of commands, `2^n` number of MacroCommand possible , which will be unnecessary if not re-used.
@@ -8,6 +10,7 @@
     - CommandInvoker directly interacting with CommandReceiver . I guess this doesn't have flexibility of command stacking and undoing commands.
     - Note `undo` and `queuing/listing commands` is noticeable features of this command
 - **Intuitive Example**
+    - [Remote Control](https://www.geeksforgeeks.org/command-pattern/)
     - CRUD DB commands, especially CUD(which has commit(execute) and rollback(unExecute) capabilities)
     - Undo/Redo Notepad Editor Commands(Cut/copy commands) 
 - **UML**
