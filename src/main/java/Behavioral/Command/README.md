@@ -2,6 +2,7 @@
 - **Naming**
     - `Encapsulating Command or Request` 
     - `Decouple CommandInvoker and CommandReceiver`. Client only passes command to commandInvoker, unaware of who is CommandReceiver and how command will be executed
+    - Supports `undo`
 - **When To Use**
     - When you want to parameterize the CommandReceiver behavior by encapsulating Command
     - When Client need to maintain a list of commands ,i.e. a MacroCommand delegating task to mini commands . Yet again Note , MacroCommand is only useful if it is re-usable, else listing should be handling at Client Side , else If there are 'n' number of commands, `2^n` number of MacroCommand possible , which will be unnecessary if not re-used.
