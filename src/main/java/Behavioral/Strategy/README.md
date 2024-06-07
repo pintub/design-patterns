@@ -18,6 +18,8 @@
 - **Cons**
     ???
 - **Comparison with Other Patterns**
+- Difference between Model inheritance & Behavior Inheritance
+    - Stragegy pattern is about Behavior Inheritance, when thee are multiple algorithm possible, Example how to find appropriate parking slot for a car
 - **Additional Note**
     - This Pattern again says, Prefer Composition to Inheritance. [Refer Additional Note](../../Structural/Bridge/README.md) .
     Also , inheritance provides re-usability (again very thin) only if sub-class has exact same behavior or partially same behavior(super.behavior(); //Do something extra). In this case, you can sub-class.</BR>
@@ -28,4 +30,4 @@
     In-short, `Inheritance provides re-use in very restricted cases only in hierarchy direction`. Ahh Inheritance = re-usability is a myth (at-least not completely true)
     
     - Composition let you encapsulate fly() to different interface-class and use this to the necessary Duck class   
-    - Till now ,I have seen only one pattern wrt [inheritance :wink:](../TemplateMethod)
+    - Till now ,I have seen only one pattern wrt [inheritance :wink:](../TemplateMethod), Other use inheritance + composition
