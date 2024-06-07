@@ -8,6 +8,7 @@
     - Create a list of handlers and invoke `handler.serve()` one by one . Difference is in CoR each object/link calls next link . Let's see detailed(but thin :wink:) difference in last section .
 - **Intuitive Example**
     - We Request through lot of validations (Authentication, Authorization, etc)
+    - Logger feature LLD implementation, i.e. Logger Level has Ordering, Each level can be one class, Example Debug's getNext() would be Info
 - [**UML**](UML.puml)
 - [**Code Example**](https://refactoring.guru/design-patterns/chain-of-responsibility/java/example)
     - [Image](https://refactoring.guru/design-patterns/chain-of-responsibility)
