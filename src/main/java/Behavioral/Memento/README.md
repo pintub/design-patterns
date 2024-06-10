@@ -9,6 +9,7 @@
     - ???
 - **Intuitive Example**
     - Undo/Redo Editor State (Notice the difference between [Command pattern Undo example](../Command/README.md))
+    - `Undo/Redo` should use undo-Stack & redo-Stack ?
 - **UML**
     - [UML](UML.puml)
 - [**Code Example**](./example)
