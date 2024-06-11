@@ -6,7 +6,7 @@
     - Having if else clause in Client class(if parameter=parameter1, create animal1, if parameter=parameter2, create animal2)
 - **Types**
     - ~~Simple Factory~~ `it is not denoted as a design Pattern` [UML](./SimpleFactoryUML.puml)
-    - Factory method `We are discussing this one, Only difference is that, this pattern has abstraction over simple Factory class to support different types of factory, whereas Simple factory method can be static` [UML](./FactoryMethodUML.puml)
+    - Factory method `We are discussing this one, Only difference is that, this pattern has abstraction over simple Factory class to support different types of factory. So Factory of factory, whereas Simple factory is factory of objects` [UML](./FactoryMethodUML.puml)
 - [**Code Example**](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm)
 - **Pros**
     - Decouples and encapsulates the creation logic to separate class
