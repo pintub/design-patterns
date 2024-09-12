@@ -6,7 +6,7 @@
 - **Brute Force Programming**
     - Separate Classes for composite and Leaf component and at Client use a `if else` for perform operation on these component . For example, If Leaf, leafComponent.behavior() .Else if compositeComponent, [GetCollectionComponents and childComponent1.behavior() + childComponent2.behavior() so on]
 - **Intuitive Example**
-    - House building , House has Room(Composite Component) has Smaller Room has Floor(Leaf Component) with same behavior
+    - House building , House has Room(Composite Component) has Smaller Room has Floor(Leaf Component) with same behavior which is `getSquareFeet()`
 - [**UML**](UML.puml)
 - **Code Example**
     - `TODO`
