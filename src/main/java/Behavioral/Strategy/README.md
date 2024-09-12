@@ -30,4 +30,4 @@
     In-short, `Inheritance provides re-use in very restricted cases only in hierarchy direction`. Ahh Inheritance = re-usability is a myth (at-least not completely true)
     
     - Composition let you encapsulate fly() to different interface-class and use this to the necessary Duck class   
-    - Till now ,I have seen only one pattern wrt [inheritance :wink:](../TemplateMethod), Other use inheritance + composition
+    - Till now ,I have seen only one pattern wrt [inheritance :wink:](../TemplateMethod), Other use inheritance + composition combination (`Note this`)
