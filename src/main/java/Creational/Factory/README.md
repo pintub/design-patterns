@@ -11,7 +11,8 @@
 - **Pros**
     - Decouples and encapsulates the creation logic to separate class
     - if such creation logic needed for multiple clients, good to have factory object for code reuse.
-    - Open/Closed Principle. You can introduce new types of products into the program without breaking existing client code
+    - Open/Closed Principle. You can introduce new type of products into the program without breaking existing client code <br/>
+    Also you can introduce new type of Factory
     - You avoid tight coupling between the creator and the concrete products.
 - **Cons**
     - ???
