@@ -1,5 +1,5 @@
 ##### Strategy Pattern
-- **Naming** `Composition over Inheritance, Create Stratery interfaces for behaviors`
+- **Naming** `Composition over Inheritance, Create Stratery interfaces for behaviors or algorithm`
 - **When To Use**
     - When there is inheritance hierarchy , below scenarios arises . Let's consider Duck(yes bird :smile:) class and its sub-classes . Duck can have fly(), quack() behavior .
         -   A RubberDuck can't fly(), violates Liskov's principle . But few can argue, than no flying is also one type of fLy() implementation .
@@ -8,7 +8,7 @@
 - **Brute Force Programming**
     - Inheritance . I won't say avoid inheritance completely , If you don't have above complications ,Inheritance is fine to use . [UML](UML_AntiPattern.puml)
 - **Intuitive Example**
-    - Duck's quack & fly
+    - PricingStratgy or FindCabStrategy in Uber
 - **UML**
     - [UML](UML.puml)
 - [**Code Example**]
