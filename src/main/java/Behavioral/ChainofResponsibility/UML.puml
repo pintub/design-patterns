@@ -1,5 +1,5 @@
 @startuml
-note top of Client: IValidationHandler handler = new ConcreteHandler1();\n handler.setNext(new ConcreteHandler2())\n handler.validate()\n //Client can decide order
+note top of Client: IValidationHandler handler = new ConcreteHandler1();\n handler.setNext(new ConcreteHandler2())\n handler.validate()\n //Client can decide order "Or" each validator knows who's next via IOC
 class Client #violet
 interface IValidationHandler
 Client o-> IValidationHandler : uses
@@ -7,7 +7,7 @@ interface IValidationHandler{
     + setNext(handler: IValidationHandler)
     + validate()
 }
-note top of AbstractValidationHandler: validate(){\n if (next != null)\n return next.validate();\n }
+note top of AbstractValidationHandler: Why this abstract class ?\nJust to have this method which uses a private field.\nvalidate(){\n if (next != null)\n return next.validate();\n }
 AbstractValidationHandler o-up-> IValidationHandler
 class AbstractValidationHandler implements IValidationHandler{
     - next : IValidationHandler
