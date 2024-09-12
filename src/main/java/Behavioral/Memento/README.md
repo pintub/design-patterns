@@ -9,7 +9,17 @@
     - ???
 - **Intuitive Example**
     - Undo/Redo Editor State (Notice the difference between [Command pattern Undo example](../Command/README.md))
-    - `Undo/Redo` should use undo-Stack & redo-Stack ?
+    - `Undo/Redo` Which DS ?
+        - One Doubly LL which stores order of state chagnges & a index maintaining which is the next element which is ready for undone
+          State1->state2-state3->state4 & index at the beginning at last = 3 (4 Undo possible, No Redo possible)
+          User did undo
+          State1->state2-state3->state4 & index = 2 (3 Undo possible, 1 Redo possible now)
+          User did undo
+          State1->state2-state3->state4 & index = 1 (2 Undo possible, 2 Redo possible now)
+          User did redo
+          State1->state2-state3->state4 & index = 2 (3 Undo possible, 1 Redo possible now)
+          User introduced State5
+          State1->state2-state3->state4->state5 & index s rest to last= 4 (5 Undo possible, No Redo possible now)        
 - **UML**
     - [UML](UML.puml)
 - [**Code Example**](./example)
