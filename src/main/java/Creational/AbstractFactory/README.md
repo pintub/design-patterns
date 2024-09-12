@@ -1,5 +1,5 @@
 ##### Abstract Factory Pattern
-- **Naming** `A Factory of objects, It is an extension of Factory method Pattern to create family of related objects`
+- **Naming** `A Factory of family of objects, It is an extension of Factory method Pattern to create family of related objects`
 - **When To Use**
     - When a client want to create a family of related objects(Example Platform Specific object family , For Mac platform UI , need {MacSpecificButton,MacSpecificDialog etc} and for Windows UI , need {WindowsSpecificButton,WindowsSpecificDialog etc}, because MacSpecificButton can't fit in WindowsSpecificDialog)
     - Note the phrase `family of related objects`  
