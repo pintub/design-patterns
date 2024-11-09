@@ -4,7 +4,7 @@ class Client #violet
 Client o-> StateController
 Client o-> ConcreteState1
 Client o-> ConcreteState2
-note top of StateController : Example TrafficPost, behavior1()=which position/light to enable
+note top of StateController : Example TrafficPost, behavior1() tells which position/light to enable
 class StateController{
     - currentState: IState
     + StateController(state)
@@ -20,11 +20,11 @@ interface IState{
 StateController o-> IState
 ConcreteState1 o-> StateController
 ConcreteState2 o-> StateController
-note top of ConcreteState1 : behavior1(){\n //Do Something\n this.stateController.changeState(new ConcreteState2())\n}
+note top of ConcreteState1 : Example: YelloState \n behavior1(){\n //Do Something\n this.stateController.changeState(new ConcreteState2())\n}
 class ConcreteState1 implements IState{
     - stateController : StateController
     + setStateController(stateController : StateController)
-    + behavior1()
+    + behavior1() { \nTurn-On Yellow Light \n Turn-off Green/Red Lights \n}
     + behavior2()
 }
 note top of ConcreteState2: stateController field is required iff each state wants to tell controller that what is the new state
