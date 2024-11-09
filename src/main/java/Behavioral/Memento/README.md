@@ -20,7 +20,7 @@
           State1->state2-state3->state4->state5 & undoIndex is reset to last= 4 (5 Undo possible, No Redo possible now)  
         </pre>
 - **UML**
-    - [UML](UML.puml)
+    - [UML](UML.puml) (`Ignore This`)
 - ~[**Code Example**](./example)Ignore this Code, It's Messy~<br>    
       <pre>
       class OriginalClass {
