@@ -24,7 +24,7 @@ interface IObserver{
     - observable : IObservable
     + update()
 }
-note right of ConcreteObserver: ConcreteObserver(IObservable){\n observable.add(this)\n }
+note right of ConcreteObserver: ConcreteObserver(IObservable){\n observable.register(this)\n }
 class ConcreteObserver implements IObserver{
     - concreteObservable: ConcreteObservable
     + ConcreteObserver(observable : IObservable): void
