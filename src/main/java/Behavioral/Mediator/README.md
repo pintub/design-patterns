@@ -9,7 +9,10 @@
 - **Intuitive Example**
     - Air Traffic Controller (Flight doesn't have to know about the flights which may land during a time in a particular airport , rather it talks to traffic controller) . 
     - UI javascript Controller(Button doesn't have to know what will happen if it is pressed, It just notifies it's pressed, Controller invokes other logic like pop-up alert or make another element visible) .
-    - It's like `Scheduler` pattern, All components register events to central event bus and schedule/mediator maintains a queue & picks event from Q . Then orders other components
+    - It's like `Scheduler` pattern, All components register events to central event bus and schedule/mediator maintains a queue of tasks & list of workers. <br/>
+    Scheduler picks event from Q . Then orders other components <br/>
+    Example TheadPool Impl / Elevator Request Handling
+    
 - **UML**
     - [UML](UML.puml)
 - [**Explanation**](https://stackoverflow.com/a/9226745/2653389)
