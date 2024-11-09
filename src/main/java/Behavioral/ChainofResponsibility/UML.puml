@@ -7,7 +7,7 @@ interface IValidationHandler{
     + setNext(handler: IValidationHandler)
     + validate()
 }
-note top of AbstractValidationHandler: Why this abstract class ?\nJust to have this method which uses a private field.\nvalidate(){\n if (next != null)\n return next.validate();\n }
+note top of AbstractValidationHandler: Why this abstract class ?\nJust to have this method which uses a private field.\nvalidate(){\n //Do something \n if (next != null)\n return next.validate();\n }
 AbstractValidationHandler o-up-> IValidationHandler
 class AbstractValidationHandler implements IValidationHandler{
     - next : IValidationHandler
