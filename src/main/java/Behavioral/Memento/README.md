@@ -21,10 +21,26 @@
         </pre>
 - **UML**
     - [UML](UML.puml)
-- ~[**Code Example**](./example)Ignore this Code, It's Messy~<br>
-    You need normal POJO & a mememto-container class(which holds DLL as per above algo). <br/>
-    When any state change happens in any setXXX() method, add to DLL.<br/>
-    POJO will also have undo() & redo() function which uses mememto-container class
+- ~[**Code Example**](./example)Ignore this Code, It's Messy~<br>    
+      <pre>
+      class OriginalClass {
+          - state
+          - mememotoContainer
+  
+          + OriginalClass clone() //this.deepCopy()
+          + setState //mememotoContainer.ddl.add(clone(this))
+          + undo() //mememotoContainer.undo
+          + redo()
+      }
+
+      class MememotoContainer {
+          - Double Linked List Of OriginalClass
+          - DLLNode toBeUndoneNode
+
+          + undo() //
+          + redo()
+      }
+      </pre>
 - **Pros**
     - Undo/redo operation
 - **Cons**
