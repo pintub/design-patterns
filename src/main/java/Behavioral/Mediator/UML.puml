@@ -9,17 +9,20 @@ note top of Client: IUIController controller = new LoginPageController()\n contr
 class Client #violet
 Client o-down-> IUIController : uses
 interface IUIController{
-    + eventHandler()
+    //eventHandlers
+    + pressHandler()
+    + hoverHandler()
 }
+note top of LoginPageController: pressHandler(){\n checkbox1.isSelected(true)}
 class LoginPageController implements IUIController{
     + register(Button, Select, CheckBox)
-    + eventHandler()
+    //eventHandlers
 }
 class RegisterPageController implements IUIController{
     + register(Button, Select, CheckBox)
-    + eventHandler()
+    //eventHandlers
 }
-note top of Button: press(){\n RegisterPageController.eventHandler()\n}
+note top of Button: press(){\n LoginPageController.pressHandler()\n}
 class Button{
     + setUIController(controller: IUIController)
     + press()
