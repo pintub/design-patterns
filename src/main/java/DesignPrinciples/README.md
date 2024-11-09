@@ -2,7 +2,7 @@
 - SINGLE responsibility
     - A class should have a single reason to change according to Uncle Bob
     -  https://www.youtube.com/watch?v=AEnePs2Evg0
-    -  [Why it is required](https://stackify.com/solid-design-principles/)
+    -  [Why it is required](https://stackify.com/solid-design-principles/) Readable,Maintainable, Less prone to regression , clean ownership
 - OPEN/CLOSE principle
     - Never rewrite , rather create new class . Achievable by poly-morphism and DI .
     - `Class1->Class2`(violating principle). 
