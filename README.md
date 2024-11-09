@@ -45,6 +45,9 @@
 https://plantuml.com/class-diagram
 - Use online [Plain UML Editor](https://plantuml-editor.kkeisuke.com/) to see the Class diagam using .puml content.
 
+##### Which DP you have used
+- SingleTon/Factory/Builder/Command(SF Code)/Strategy/Iterator(java iterator)/COR(In Http filter chain)/Mediator(java Thread pool) etc
+ 
 ##### Additional Patterns
 - [Null Object Pattern](./src/main/java/NullObject)
 - Enum + If-Else vs Polymorphism
