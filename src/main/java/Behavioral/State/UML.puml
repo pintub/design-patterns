@@ -6,10 +6,10 @@ Client o-> ConcreteState1
 Client o-> ConcreteState2
 note top of StateController : Example TrafficPost, behavior1()=which position/light to enable
 class StateController{
-    - state: IState
+    - currentState: IState
     + StateController(state)
-    + behavior1()
-    + behavior2()
+    + behavior1() //Calls currentState.behavior1()
+    + behavior2() //Calls currentState.behavior2()
     - default changeState() //Method to support state transition.\nIf each state decides what is next state\nEven Traffic police can use this if any VIP treatment needed for eaxmple for a CM
 }
 interface IState{
