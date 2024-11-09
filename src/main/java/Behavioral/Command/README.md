@@ -5,8 +5,7 @@
     - ~Supports~ Can use `undo` or `unexecute`, so that command can be undone
 - **When To Use**
     - When you want to parameterize the CommandReceiver behavior by encapsulating Command
-    - When Client need to maintain a list of commands ,i.e. a MacroCommand delegating task to mini commands . Yet again Note , MacroCommand is only useful if it is re-usable, else listing should be handling at Client Side , else If there are 'n' number of commands, `2^n` number of MacroCommand possible , which will be unnecessary if not re-used.
-    - When Client needs to have execute /unExecute(undo) on CommandReceiver actions. Undo is one good idea is Database DML operations . Suppose you have doing a DB operation in this sequence (Insert to TableA->Insert to TableB->Insert to TableC) , then if Inset to TableB fails(middle stage) , it should undo TableB insertion ,then TableA insertion.   
+    - When Client need to maintain a list of commands ,i.e. a MacroCommand delegating task to mini commands . Yet again Note , MacroCommand is only useful if it is re-usable, else listing should be handling at Client Side , else If there are 'n' number of commands, `2^n` number of MacroCommand possible , which will be unnecessary if not re-used.      
 - **Brute Force Programming**
     - CommandInvoker directly interacting with CommandReceiver . I guess this doesn't have flexibility of command stacking and undoing commands.
 - **Intuitive Example**
